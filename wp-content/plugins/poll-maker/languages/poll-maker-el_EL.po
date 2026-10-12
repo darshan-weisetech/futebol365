@@ -1,0 +1,1902 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Poll Maker\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-02-15 18:11+0300\n"
+"PO-Revision-Date: 2026-02-15 18:11+0300\n"
+"Last-Translator: \n"
+"Language-Team: Greek\n"
+"Language: el\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.8\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n_noop:1,2;_x\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../admin/class-poll-maker-ays-admin.php:187
+msgid "Error"
+msgstr ""
+
+#: ../admin/class-poll-maker-ays-admin.php:188
+msgid "Can't load resource."
+msgstr ""
+
+#: ../admin/class-poll-maker-ays-admin.php:189
+msgid "Maybe something went wrong."
+msgstr ""
+
+#: ../admin/class-poll-maker-ays-admin.php:1706
+#: ../includes/class-poll-maker-feedback.php:131
+#: ../poll/poll-maker-block-new.js:64 ../poll/poll-maker-block.js:61
+msgid "Poll Maker"
+msgstr "Δημοσκοπήσεις"
+
+#: ../admin/class-poll-maker-ays-admin.php:1710
+msgid "CHRISTMAS SPECIAL"
+msgstr ""
+
+#: ../admin/class-poll-maker-ays-admin.php:1716
+#, fuzzy
+#| msgid "Unlimited sites"
+msgid "Limited time offer"
+msgstr "Απεριόριστοι ιστότοποι"
+
+#: ../admin/class-poll-maker-ays-admin.php:1720
+#: ../admin/class-poll-maker-ays-admin.php:3028
+msgid "Click to copy"
+msgstr ""
+
+#: ../admin/class-poll-maker-ays-admin.php:1728
+#: ../admin/class-poll-maker-ays-admin.php:2361
+#: ../admin/class-poll-maker-ays-admin.php:3401
+#: ../admin/class-poll-maker-ays-admin.php:4100
+#, fuzzy
+#| msgid "BUY NOW"
+msgid "Buy Now"
+msgstr "ΑΓΟΡΑΣΕ ΤΩΡΑ"
+
+#: ../admin/class-poll-maker-ays-admin.php:1738
+#: ../admin/class-poll-maker-ays-admin.php:2326
+#: ../admin/class-poll-maker-ays-admin.php:2471
+#: ../admin/class-poll-maker-ays-admin.php:3057
+msgid "Dismiss ad"
+msgstr ""
+
+#: ../admin/class-poll-maker-ays-admin.php:1760
+msgid "Coupon code copied!"
+msgstr ""
+
+#: ../admin/class-poll-maker-ays-admin.php:2141
+msgid "Coupon Code"
+msgstr ""
+
+#: ../admin/class-poll-maker-ays-admin.php:2167
+msgid "Days"
+msgstr ""
+
+#: ../admin/class-poll-maker-ays-admin.php:2168
+msgid "Hours"
+msgstr ""
+
+#: ../admin/class-poll-maker-ays-admin.php:2169
+msgid "Minutes"
+msgstr ""
+
+#: ../admin/class-poll-maker-ays-admin.php:2170
+msgid "Seconds"
+msgstr ""
+
+#: ../admin/class-poll-maker-ays-admin.php:2184
+msgid "Get Your Deal"
+msgstr ""
+
+#: ../admin/class-poll-maker-ays-admin.php:2299
+#, php-format
+msgid "%1$s Mega Bundle %2$s (Quiz + Survey + Poll)"
+msgstr ""
+
+#: ../admin/class-poll-maker-ays-admin.php:2306
+msgid "30 Day Money Back Guarantee"
+msgstr ""
+
+#: ../admin/class-poll-maker-ays-admin.php:2363
+msgid "One-time payment"
+msgstr ""
+
+#: ../admin/class-poll-maker-ays-admin.php:2415
+msgid "days"
+msgstr ""
+
+#: ../admin/class-poll-maker-ays-admin.php:2420
+msgid "hours"
+msgstr ""
+
+#: ../admin/class-poll-maker-ays-admin.php:2425
+msgid "minutes"
+msgstr ""
+
+#: ../admin/class-poll-maker-ays-admin.php:2430
+msgid "seconds"
+msgstr ""
+
+#: ../admin/class-poll-maker-ays-admin.php:3021
+#, php-format
+msgid "Get the Pro Version of %s Poll Maker%s – 20%% OFF"
+msgstr ""
+
+#: ../admin/class-poll-maker-ays-admin.php:3022
+msgid "Unlock advanced features + 30 day Money Back Guarantee"
+msgstr ""
+
+#: ../admin/class-poll-maker-ays-admin.php:3037
+msgid "Only"
+msgstr ""
+
+#: ../admin/class-poll-maker-ays-admin.php:3037
+msgid "of 50 discounted licenses left"
+msgstr ""
+
+#: ../admin/class-poll-maker-ays-admin.php:3049
+#, fuzzy
+#| msgid "Upgrade for"
+msgid "Upgrade Now"
+msgstr "Αναβάθμιση για"
+
+#: ../admin/class-poll-maker-ays-admin.php:3339
+msgid "<span><a href='"
+msgstr ""
+
+#: ../admin/class-poll-maker-ays-admin.php:3846
+msgid "Fox LMS"
+msgstr ""
+
+#: ../admin/class-poll-maker-ays-admin.php:3847
+msgid "Build and manage online courses directly on your WordPress site."
+msgstr ""
+
+#: ../admin/class-poll-maker-ays-admin.php:3848
+msgid ""
+"With the FoxLMS plugin, you can create, sell, and organize courses, lessons, "
+"and quizzes, transforming your website into a dynamic e-learning platform."
+msgstr ""
+
+#: ../admin/class-poll-maker-ays-admin.php:3855
+msgid "Quiz Maker"
+msgstr ""
+
+#: ../admin/class-poll-maker-ays-admin.php:3856
+msgid "With our Quiz Maker plugin it’s easy to make a quiz in a short time."
+msgstr ""
+
+#: ../admin/class-poll-maker-ays-admin.php:3857
+msgid ""
+"You to add images to your quiz, order unlimited questions. Also you can "
+"style your quiz to satisfy your visitors."
+msgstr ""
+
+#: ../admin/class-poll-maker-ays-admin.php:3864
+msgid "Survey Maker"
+msgstr ""
+
+#: ../admin/class-poll-maker-ays-admin.php:3865
+msgid ""
+"Make amazing online surveys and get real-time feedback quickly and easily."
+msgstr ""
+
+#: ../admin/class-poll-maker-ays-admin.php:3866
+msgid ""
+"Learn what your website visitors want, need, and expect with the help of "
+"Survey Maker. Build surveys without limiting your needs."
+msgstr ""
+
+#: ../admin/class-poll-maker-ays-admin.php:3873
+msgid "Popup Box"
+msgstr ""
+
+#: ../admin/class-poll-maker-ays-admin.php:3874
+msgid ""
+"Popup everything you want! Create informative and promotional popups all in "
+"one plugin."
+msgstr ""
+
+#: ../admin/class-poll-maker-ays-admin.php:3875
+msgid ""
+"Attract your visitors and convert them into email subscribers and paying "
+"customers."
+msgstr ""
+
+#: ../admin/class-poll-maker-ays-admin.php:3882
+msgid "Gallery Photo Gallery"
+msgstr ""
+
+#: ../admin/class-poll-maker-ays-admin.php:3883
+msgid ""
+"Create unlimited galleries and include unlimited images in those galleries."
+msgstr ""
+
+#: ../admin/class-poll-maker-ays-admin.php:3884
+msgid ""
+"Represent images in an attractive way. Attract people with your own single "
+"and multiple free galleries from your photo library."
+msgstr ""
+
+#: ../admin/class-poll-maker-ays-admin.php:3891
+msgid "Secure Copy Content Protection"
+msgstr ""
+
+#: ../admin/class-poll-maker-ays-admin.php:3892
+msgid ""
+"Disable the right click, copy paste, content selection and copy shortcut "
+"keys on your website."
+msgstr ""
+
+#: ../admin/class-poll-maker-ays-admin.php:3893
+msgid ""
+"Protect web content from being plagiarized. Prevent plagiarism from your "
+"website with this easy to use plugin."
+msgstr ""
+
+#: ../admin/class-poll-maker-ays-admin.php:3900
+msgid "Personal Dictionary"
+msgstr ""
+
+#: ../admin/class-poll-maker-ays-admin.php:3901
+msgid ""
+"Allow your students to create personal dictionary, study and memorize the "
+"words."
+msgstr ""
+
+#: ../admin/class-poll-maker-ays-admin.php:3902
+msgid ""
+"Allow your users to create their own digital dictionaries and learn new "
+"words and terms as fastest as possible."
+msgstr ""
+
+#: ../admin/class-poll-maker-ays-admin.php:3909
+msgid "Chart Builder"
+msgstr ""
+
+#: ../admin/class-poll-maker-ays-admin.php:3910
+msgid "Chart Builder plugin allows you to create beautiful charts"
+msgstr ""
+
+#: ../admin/class-poll-maker-ays-admin.php:3911
+msgid " and graphs easily and quickly."
+msgstr ""
+
+#: ../admin/class-poll-maker-ays-admin.php:3918
+msgid "Easy Form"
+msgstr ""
+
+#: ../admin/class-poll-maker-ays-admin.php:3919
+msgid "Choose the best WordPress form builder plugin. "
+msgstr ""
+
+#: ../admin/class-poll-maker-ays-admin.php:3920
+msgid ""
+"Create contact forms, payment forms, surveys, and many more custom forms. "
+"Build forms easily with us."
+msgstr ""
+
+#: ../includes/class-poll-maker-feedback.php:108
+#, php-format
+msgid "Contact our %s support team %s to find and fix the issue."
+msgstr ""
+
+#: ../includes/lists/class-poll-maker-categories-list-table.php:202
+msgid "There are no poll categories yet."
+msgstr "Δεν υπάρχουν ακόμη κατηγορίες δημοσκόπησης."
+
+#: ../includes/lists/class-poll-maker-each-results-poll-list-table.php:265
+#: ../includes/lists/class-poll-maker-results-list-table.php:206
+msgid "There are no results yet."
+msgstr "Δεν υπάρχουν ακόμη αποτελέσματα."
+
+#: ../includes/lists/class-poll-maker-polls-list-table.php:1485
+msgid "There are no polls yet."
+msgstr "Δεν υπάρχουν ακόμη δημοσκοπήσεις."
+
+#: ../poll/poll-maker-block-new.js:78 ../poll/poll-maker-block.js:75
+msgid "Something went wrong please reload page"
+msgstr "Κάτι δεν πήγε καλά, φορτώστε ξανά τη σελίδα"
+
+#: ../poll/poll-maker-block-new.js:83 ../poll/poll-maker-block.js:80
+msgid "Loading..."
+msgstr "Φόρτωση..."
+
+#: ../poll/poll-maker-block-new.js:90 ../poll/poll-maker-block.js:87
+msgid "There are no polls yet"
+msgstr "Δεν υπάρχουν ακόμη δημοσκοπήσεις"
+
+#: ../poll/poll-maker-block-new.js:100 ../poll/poll-maker-block.js:97
+msgid "-Select Poll-"
+msgstr "-Επιλέξτε Δημοσκόπηση-"
+
+#: ../poll/poll-maker-block-new.js:113 ../poll/poll-maker-block.js:110
+msgid "Select Poll"
+msgstr "Επιλέξτε δημοσκόπηση"
+
+#, fuzzy
+#~| msgid "Add New"
+#~ msgid "Add"
+#~ msgstr "Προσθήκη νέου"
+
+#, fuzzy
+#~| msgid "Create category"
+#~ msgid "Great job"
+#~ msgstr "Δημιουργία κατηγορίας"
+
+#, fuzzy
+#~| msgid "Color 1"
+#~ msgid "Clear color"
+#~ msgstr "Χρώμα 1"
+
+#, fuzzy
+#~| msgid "Select category"
+#~ msgid "Select default color"
+#~ msgstr "Επιλέξτε Κατηγορία"
+
+#, fuzzy
+#~| msgid "Select Poll"
+#~ msgid "Select Color"
+#~ msgstr "Επιλέξτε δημοσκόπηση"
+
+#, fuzzy
+#~| msgid "Color 1"
+#~ msgid "Color value"
+#~ msgstr "Χρώμα 1"
+
+#~ msgid "Categories"
+#~ msgstr "Κατηγορίες"
+
+#~ msgid "Results"
+#~ msgstr "Αποτελέσματα"
+
+#, fuzzy
+#~| msgid "Custom Form Fields"
+#~ msgid "Custom Fields"
+#~ msgstr "Πεδία προσαρμοσμένης φόρμας"
+
+#~ msgid "General Settings"
+#~ msgstr "Γενικές Ρυθμίσεις"
+
+#, fuzzy
+#~| msgid "PRO Features"
+#~ msgid "PRO features"
+#~ msgstr "Χαρακτηριστικά PRO"
+
+#~ msgid "Settings"
+#~ msgstr "Ρυθμίσεις"
+
+#~ msgid "Polls"
+#~ msgstr "Ψηφοφορίες"
+
+#~ msgid "Poll Title"
+#~ msgstr "Τίτλος ψηφοφορίας"
+
+#~ msgid "Answer"
+#~ msgstr "Απάντηση"
+
+#~ msgid "User IP"
+#~ msgstr "IP χρήστη"
+
+#, fuzzy
+#~| msgid "Support for"
+#~ msgid "Support"
+#~ msgstr "Υποστήριξη για"
+
+#, fuzzy
+#~| msgid "Poll Maker"
+#~ msgid "Poll Maker Plugin"
+#~ msgstr "Δημοσκοπήσεις"
+
+#~ msgid "Add new category"
+#~ msgstr "Προσθήκη νέας κατηγορίας"
+
+#~ msgid "Edit category"
+#~ msgstr "Επεξεργασία κατηγορίας"
+
+#~ msgid "Title"
+#~ msgstr "Τίτλος"
+
+#, fuzzy
+#~| msgid "The name of category"
+#~ msgid "Write the name of the category."
+#~ msgstr "Το όνομα της κατηγορίας"
+
+#~ msgid "Description"
+#~ msgstr "Περιγραφή"
+
+#~ msgid "Allow to skip polls"
+#~ msgstr "Να επιτρέπεται η παράλειψη δημοσκοπήσεων"
+
+#~ msgid "Next button text"
+#~ msgstr "Κείμενο επόμενου κουμπιού"
+
+#~ msgid "Save and close"
+#~ msgstr "Αποθήκευσε και κλείσε"
+
+#~ msgid "Save"
+#~ msgstr "Αποθήκευση"
+
+#~ msgid "Add New"
+#~ msgstr "Προσθήκη νέου"
+
+#~ msgid "Poll"
+#~ msgstr "Ψηφοφορία"
+
+#, fuzzy
+#~| msgid "Please fill out the form:"
+#~ msgid "Fill out the information."
+#~ msgstr "Συμπληρώστε τη φόρμα:"
+
+#, fuzzy
+#~| msgid "Shortcode"
+#~ msgid "shortcode"
+#~ msgstr "Σύντομος κωδικός"
+
+#, fuzzy
+#~| msgid "Show or hide the name of the poll"
+#~ msgid "How do I change the design of the poll?"
+#~ msgstr "Εμφάνιση ή απόκρυψη του ονόματος της δημοσκόπησης"
+
+#, fuzzy
+#~| msgid "Show or hide the name of the poll"
+#~ msgid "How do I limit access to the poll?"
+#~ msgstr "Εμφάνιση ή απόκρυψη του ονόματος της δημοσκόπησης"
+
+#~ msgid "Personal"
+#~ msgstr "Προσωπικό"
+
+#~ msgid "Business"
+#~ msgstr "Επιχείρηση"
+
+#~ msgid "Developer"
+#~ msgstr "Προγραμματιστής"
+
+#~ msgid "Free"
+#~ msgstr "Δωρεάν"
+
+#~ msgid "Buy now"
+#~ msgstr "Αγορά τώρα"
+
+#~ msgid "Support for"
+#~ msgstr "Υποστήριξη για"
+
+#~ msgid "1 site"
+#~ msgstr "1 ιστότοπος"
+
+#~ msgid "5 sites"
+#~ msgstr "5 ιστότοποι"
+
+#~ msgid "Unlimited sites"
+#~ msgstr "Απεριόριστοι ιστότοποι"
+
+#~ msgid "3 months"
+#~ msgstr "3 μήνες"
+
+#~ msgid "12 months"
+#~ msgstr "12 μήνες"
+
+#~ msgid "Lifetime"
+#~ msgstr "Διάρκεια Ζωής"
+
+#~ msgid "Install on unlimited sites"
+#~ msgstr "Εγκατάσταση σε απεριόριστους ιστότοπους"
+
+#~ msgid "Reports in dashboard"
+#~ msgstr "Αναφορές στον πίνακα ελέγχου"
+
+#, fuzzy
+#~| msgid "Allow not to vote"
+#~ msgid "Allow multivote"
+#~ msgstr "Επιτρέψτε να μην ψηφίσετε"
+
+#~ msgid "VS type of poll (versus)"
+#~ msgstr "VS τύπος δημοσκόπησης (έναντι)"
+
+#~ msgid "Ability to add custom option"
+#~ msgstr "Δυνατότητα προσθήκης προσαρμοσμένης επιλογής"
+
+#~ msgid "Extra 4 themes"
+#~ msgstr "Επιπλέον 4 θέματα"
+
+#~ msgid "Results with charts"
+#~ msgstr "Αποτελέσματα με γραφήματα"
+
+#~ msgid "Export results to CSV"
+#~ msgstr "Εξαγωγή αποτελεσμάτων σε CSV"
+
+#~ msgid "Custom Form Fields"
+#~ msgstr "Πεδία προσαρμοσμένης φόρμας"
+
+#~ msgid "Vote reason option"
+#~ msgstr "Επιλογή λόγου ψηφοφορίας"
+
+#, fuzzy
+#~| msgid "Message instead of results"
+#~ msgid "Text instead of results"
+#~ msgstr "Μήνυμα αντί για αποτελέσματα"
+
+#~ msgid "Mailchimp integration"
+#~ msgstr "Ενσωμάτωση Mailchimp"
+
+#, fuzzy
+#~| msgid "Campaign Monitor Settings"
+#~ msgid "Campaign Monitor integration"
+#~ msgstr "Ρυθμίσεις παρακολούθησης καμπάνιας"
+
+#, fuzzy
+#~| msgid "Zapier Integration Settings"
+#~ msgid "Zapier integration"
+#~ msgstr "Ρυθμίσεις Ενσωμάτωση Zapier"
+
+#, fuzzy
+#~| msgid "Active Campaign Settings"
+#~ msgid "ActiveCampaign integration"
+#~ msgstr "Ενεργές ρυθμίσεις καμπάνιας"
+
+#, fuzzy
+#~| msgid "Mailchimp integration"
+#~ msgid "Slack integration"
+#~ msgstr "Ενσωμάτωση Mailchimp"
+
+#, fuzzy
+#~| msgid "Vote reason option"
+#~ msgid "Vote session"
+#~ msgstr "Επιλογή λόγου ψηφοφορίας"
+
+#, fuzzy
+#~| msgid "Message instead of results"
+#~ msgid "Messages based on answers"
+#~ msgstr "Μήνυμα αντί για αποτελέσματα"
+
+#, fuzzy
+#~| msgid "Poll category created."
+#~ msgid "Display category shortcode"
+#~ msgstr "Δημιουργήθηκε κατηγορία δημοσκόπησης."
+
+#~ msgid "Question"
+#~ msgstr "Ερωτήση"
+
+#, fuzzy
+#~| msgid "Question"
+#~ msgid "Ask a question*"
+#~ msgstr "Ερωτήση"
+
+#~ msgid "Answers"
+#~ msgstr "Απαντήσεις"
+
+#, fuzzy
+#~| msgid "Add new poll"
+#~ msgid "Add an Option"
+#~ msgstr "Προσθήκη νέας δημοσκόπησης"
+
+#~ msgid "Allow not to vote"
+#~ msgstr "Επιτρέψτε να μην ψηφίσετε"
+
+#~ msgid "Hide results"
+#~ msgstr "Απόκρυψη αποτελεσμάτων"
+
+#~ msgid "Add Image"
+#~ msgstr "Προσθέστε εικόνα"
+
+#~ msgid "User Name"
+#~ msgstr "Ονομα χρήστη"
+
+#~ msgid "User Email"
+#~ msgstr "Email χρήστη"
+
+#~ msgid "User Phone"
+#~ msgstr "Τηλέφωνο χρήστη"
+
+#, fuzzy
+#~| msgid "Poll Title"
+#~ msgid "Poll title"
+#~ msgstr "Τίτλος ψηφοφορίας"
+
+#, fuzzy
+#~| msgid "User Name"
+#~ msgid "User's First Name"
+#~ msgstr "Ονομα χρήστη"
+
+#, fuzzy
+#~| msgid "User Name"
+#~ msgid "User's Last Name"
+#~ msgstr "Ονομα χρήστη"
+
+#, fuzzy
+#~| msgid "The categories of the poll"
+#~ msgid "Creation date of the poll"
+#~ msgstr "Οι κατηγορίες της δημοσκόπησης"
+
+#, fuzzy
+#~| msgid "User Name"
+#~ msgid "User's Display Name"
+#~ msgstr "Ονομα χρήστη"
+
+#, fuzzy
+#~| msgid "User Name"
+#~ msgid "User's Nick Name"
+#~ msgstr "Ονομα χρήστη"
+
+#, fuzzy
+#~| msgid "Show passed users count"
+#~ msgid "Polls pass count"
+#~ msgstr "Εμφάνιση του αριθμού των επιτυχημένων χρηστών"
+
+#~ msgid "Vote"
+#~ msgstr "Ψηφίστε"
+
+#~ msgid "See Results"
+#~ msgstr "Δείτε τα αποτελέσματα"
+
+#~ msgid "Thanks for your answer!"
+#~ msgstr "Ευχαριστούμε για την απάντηση σας!"
+
+#~ msgid "You have already voted"
+#~ msgstr "Έχετε ήδη ψηφίσει"
+
+#~ msgid "You don't have permissions for passing the poll"
+#~ msgstr "Δεν έχετε δικαιώματα για την επιτυχία της ψηφοφορίας"
+
+#~ msgid "You must sign in for passing the poll"
+#~ msgstr "Πρέπει να συνδεθείτε για να περάσετε την ψηφοφορία"
+
+#~ msgid "The poll will be available soon!"
+#~ msgstr "Η δημοσκόπηση θα είναι σύντομα διαθέσιμη!"
+
+#~ msgid "The poll has expired!"
+#~ msgstr "Η δημοσκόπηση έληξε!"
+
+#~ msgid "Please fill out the form:"
+#~ msgstr "Συμπληρώστε τη φόρμα:"
+
+#~ msgid "Add new poll"
+#~ msgstr "Προσθήκη νέας δημοσκόπησης"
+
+#~ msgid "Edit poll"
+#~ msgstr "Επεξεργασία δημοσκόπησης"
+
+#~ msgid "Edit Image"
+#~ msgstr "Επεξεργασία εικόνας"
+
+#~ msgid "Name"
+#~ msgstr "Όνομα"
+
+#~ msgid "Email"
+#~ msgstr "Email"
+
+#~ msgid "Phone"
+#~ msgstr "Τηλέφωνο"
+
+#~ msgid "There are no lists"
+#~ msgstr "Δεν υπάρχουν λίστες"
+
+#~ msgid "Shortcode text for editor"
+#~ msgstr "Σύντομο κείμενο για συντάκτη"
+
+#~ msgid "To insert the Poll into a page, post or text widget, copy shortcode"
+#~ msgstr ""
+#~ "Για να εισαγάγετε τη δημοσκόπηση σε μια σελίδα, μια δημοσίευση ή ένα "
+#~ "γραφικό στοιχείο κειμένου, αντιγράψτε τον σύντομο κωδικό"
+
+#~ msgid "and paste it at the desired place in the editor."
+#~ msgstr "και επικολλήστε το στην επιθυμητή θέση στο πρόγραμμα επεξεργασίας."
+
+#~ msgid "General"
+#~ msgstr "Γενικά"
+
+#~ msgid "Styles"
+#~ msgstr "Στυλ"
+
+#, fuzzy
+#~| msgid "Results sorting"
+#~ msgid "Results Settings"
+#~ msgstr "Ταξινόμηση αποτελεσμάτων"
+
+#~ msgid "Limitations"
+#~ msgstr "Περιορισμοί"
+
+#~ msgid "User Data"
+#~ msgstr "Δεδομένα χρήστη"
+
+#~ msgid "Integrations"
+#~ msgstr "Ολοκληρώσεις"
+
+#~ msgid "General options"
+#~ msgstr "Γενικές επιλογές"
+
+#, fuzzy
+#~| msgid "Add image on the question"
+#~ msgid "Add an image to the question."
+#~ msgstr "Προσθέστε εικόνα στην ερώτηση"
+
+#~ msgid "Redirect URL"
+#~ msgstr "Ανακατεύθυνση URL"
+
+#, fuzzy
+#~| msgid "Add Image"
+#~ msgid "Image"
+#~ msgstr "Προσθέστε εικόνα"
+
+#~ msgid "Delete"
+#~ msgstr "Διαγράφη"
+
+#, fuzzy
+#~| msgid "Settings"
+#~ msgid "Option Settings"
+#~ msgstr "Ρυθμίσεις"
+
+#, fuzzy
+#~| msgid "Allow add custom answer"
+#~ msgid "Allow custom answer"
+#~ msgstr "Να επιτρέπεται η προσθήκη προσαρμοσμένης απάντησης"
+
+#, fuzzy
+#~| msgid "The categories of the poll"
+#~ msgid "Select the appearance of the poll."
+#~ msgstr "Οι κατηγορίες της δημοσκόπησης"
+
+#~ msgid "Hand"
+#~ msgstr "Χέρι"
+
+#~ msgid "Emoji"
+#~ msgstr "Emoji"
+
+#, fuzzy
+#~| msgid "The appearance of the voting type of the poll"
+#~ msgid "Select the appearance and the scale of assessment of the poll."
+#~ msgstr "Η εμφάνιση του τύπου ψηφοφορίας της ψηφοφορίας"
+
+#~ msgid "Stars"
+#~ msgstr "Αστέρια"
+
+#, fuzzy
+#~| msgid "Allow users to add their fake votes to each answer."
+#~ msgid "Allow users to add their fake votes to each option."
+#~ msgstr "Επιτρέψτε στους χρήστες να προσθέσουν την παραλλαγή απάντησης"
+
+#, fuzzy
+#~| msgid "Poll width (px)"
+#~ msgid "Width"
+#~ msgstr "Πλάτος δημοσκόπησης (px)"
+
+#~ msgid "Styling options"
+#~ msgstr "Επιλογές στυλ"
+
+#, fuzzy
+#~| msgid "Poll Theme"
+#~ msgid "Theme"
+#~ msgstr "Θέμα ψηφοφορίας"
+
+#~ msgid "Classic Light"
+#~ msgstr "Κλασικό φωτεινό"
+
+#~ msgid "Classic Dark"
+#~ msgstr "Κλασικό σκοτεινό"
+
+#~ msgid "It is PRO version feature"
+#~ msgstr "Είναι η δυνατότητα έκδοσης PRO"
+
+#~ msgid "Aquamarine"
+#~ msgstr "Κυανοπράσινος"
+
+#, fuzzy
+#~| msgid "Poll Title"
+#~ msgid "Poll styles"
+#~ msgstr "Τίτλος ψηφοφορίας"
+
+#~ msgid "Main Color"
+#~ msgstr "Κύριο χρώμα"
+
+#, fuzzy
+#~| msgid ""
+#~| "The central color of the poll (border color, the color of the rate "
+#~| "percentage and the background color of sending button)"
+#~ msgid ""
+#~ "Specify the color of the poll's main attributes. It includes border "
+#~ "color, the color of the rate percentage and the background color of the "
+#~ "vote button."
+#~ msgstr ""
+#~ "Το κεντρικό χρώμα της δημοσκόπησης (χρώμα περιγράμματος, το χρώμα του "
+#~ "ποσοστού ποσοστού και το χρώμα φόντου του κουμπιού αποστολής)"
+
+#, fuzzy
+#~| msgid "Poll Text Color"
+#~ msgid "Text Color"
+#~ msgstr "Χρώμα κειμένου δημοσκόπησης"
+
+#, fuzzy
+#~| msgid "The color of the text in the poll"
+#~ msgid "Specify the color of the text written inside the poll."
+#~ msgstr "Το χρώμα του κειμένου στη δημοσκόπηση"
+
+#~ msgid "Icons Color"
+#~ msgstr "Χρώμα εικονιδίων"
+
+#, fuzzy
+#~| msgid "The icons color in voting and rating types"
+#~ msgid "Specify the icon color in voting and rating types."
+#~ msgstr "Τα εικονίδια χρωματίζονται σε τύπους ψηφοφορίας και βαθμολογίας"
+
+#~ msgid "Background Color"
+#~ msgstr "Χρώμα φόντου"
+
+#, fuzzy
+#~| msgid "The background of the title in the poll"
+#~ msgid "Specify the background color of the poll."
+#~ msgstr "Το φόντο του τίτλου στη δημοσκόπηση"
+
+#~ msgid "Background Image"
+#~ msgstr "Φόντο εικόνας"
+
+#, fuzzy
+#~| msgid "Background image of the poll"
+#~ msgid "Background image position"
+#~ msgstr "Εικόνα φόντου της δημοσκόπησης"
+
+#, fuzzy
+#~| msgid "Background image of the poll"
+#~ msgid "The position of background image of the polls"
+#~ msgstr "Εικόνα φόντου της δημοσκόπησης"
+
+#, fuzzy
+#~| msgid "Left"
+#~ msgid "Left Top"
+#~ msgstr "Left"
+
+#, fuzzy
+#~| msgid "Center"
+#~ msgid "Left Center"
+#~ msgstr "Κέντρο"
+
+#, fuzzy
+#~| msgid "Bottom"
+#~ msgid "Left Bottom"
+#~ msgstr "Bottom"
+
+#, fuzzy
+#~| msgid "Center"
+#~ msgid "Center Top"
+#~ msgstr "Κέντρο"
+
+#, fuzzy
+#~| msgid "Center"
+#~ msgid "Center Center"
+#~ msgstr "Κέντρο"
+
+#, fuzzy
+#~| msgid "Bottom"
+#~ msgid "Center Bottom"
+#~ msgstr "Bottom"
+
+#, fuzzy
+#~| msgid "Right"
+#~ msgid "Right Top"
+#~ msgstr "Right"
+
+#, fuzzy
+#~| msgid "Center"
+#~ msgid "Right Center"
+#~ msgstr "Κέντρο"
+
+#, fuzzy
+#~| msgid "Bottom"
+#~ msgid "Right Bottom"
+#~ msgstr "Bottom"
+
+#, fuzzy
+#~| msgid "Background image of the poll"
+#~ msgid "Hide background image on result page"
+#~ msgstr "Εικόνα φόντου της δημοσκόπησης"
+
+#~ msgid "Box shadow"
+#~ msgstr "Σκιά κουτιού"
+
+#~ msgid "Box shadow color"
+#~ msgstr "Χρώμα σκιάς κουτιού"
+
+#~ msgid "The shadow color of Poll container"
+#~ msgstr "Χρώμα στην σκιά του δοχείου δημοσκοπήσεων"
+
+#, fuzzy
+#~| msgid "Poll Background Gradient"
+#~ msgid "Background Gradient"
+#~ msgstr "Κλίση φόντου ψηφοφορίας"
+
+#~ msgid "Color 1"
+#~ msgstr "Χρώμα 1"
+
+#~ msgid "Color 2"
+#~ msgstr "Χρώμα 2"
+
+#~ msgid "Gradient direction"
+#~ msgstr "Κατεύθυνση κλίσης"
+
+#~ msgid "Vertical"
+#~ msgstr "Κάθετο"
+
+#~ msgid "Horizontal"
+#~ msgstr "Οριζόντια"
+
+#~ msgid "Diagonal left to right"
+#~ msgstr "Διαγώνια από αριστερά προς τα δεξιά"
+
+#~ msgid "Diagonal right to left"
+#~ msgstr "Διαγώνια δεξιά προς αριστερά"
+
+#, fuzzy
+#~| msgid "Show Title"
+#~ msgid "Logo title"
+#~ msgstr "Εμφάνιση τίτλου"
+
+#, fuzzy
+#~| msgid "The categories of the poll"
+#~ msgid "Specify the title of the Logo image."
+#~ msgstr "Οι κατηγορίες της δημοσκόπησης"
+
+#~ msgid "Title Background Color"
+#~ msgstr "Χρώμα φόντου τίτλου"
+
+#, fuzzy
+#~| msgid "Background color of the answers"
+#~ msgid "Specify the background color of the title."
+#~ msgstr "Χρώμα φόντου των απαντήσεων"
+
+#~ msgid "Left"
+#~ msgstr "Left"
+
+#~ msgid "Center"
+#~ msgstr "Κέντρο"
+
+#~ msgid "Right"
+#~ msgstr "Right"
+
+#, fuzzy
+#~| msgid "Color 1"
+#~ msgid "Color"
+#~ msgstr "Χρώμα 1"
+
+#~ msgid "Icon size (px)"
+#~ msgstr "Μέγεθος εικονιδίου (px)"
+
+#, fuzzy
+#~| msgid ""
+#~| "The size of the icons in rating and voting types of the poll (it should "
+#~| "be 10 and more)"
+#~ msgid ""
+#~ "Specify the size of the icons in rating and voting types of the poll in "
+#~ "pixels. It should be 10 and more."
+#~ msgstr ""
+#~ "Το μέγεθος των εικονιδίων στην αξιολόγηση και την ψηφοφορία είδη της "
+#~ "δημοσκόπησης (θα πρέπει να είναι 10 και άνω)"
+
+#, fuzzy
+#~| msgid "Poll width (px)"
+#~ msgid "Width (px)"
+#~ msgstr "Πλάτος δημοσκόπησης (px)"
+
+#, fuzzy
+#~| msgid "Answer styles"
+#~ msgid "Question styles"
+#~ msgstr "Στυλ απάντησης"
+
+#~ msgid "None"
+#~ msgstr "Κανένα"
+
+#, fuzzy
+#~| msgid "Answer styles"
+#~ msgid "Answer Styles"
+#~ msgstr "Στυλ απάντησης"
+
+#, fuzzy
+#~| msgid "Answer styles"
+#~ msgid "Enable answer styles"
+#~ msgstr "Στυλ απάντησης"
+
+#~ msgid "Answers Background Color"
+#~ msgstr "Χρώμα φόντου απαντήσεων"
+
+#, fuzzy
+#~| msgid "Background color of the answers"
+#~ msgid "Specify the background color of the answers' boxes."
+#~ msgstr "Χρώμα φόντου των απαντήσεων"
+
+#~ msgid "Border side"
+#~ msgstr "Σύνορα"
+
+#~ msgid "All sides"
+#~ msgstr "Όλες οι πλευρές"
+
+#~ msgid "Top"
+#~ msgstr "Top"
+
+#~ msgid "Bottom"
+#~ msgstr "Bottom"
+
+#, fuzzy
+#~| msgid "Answer 1"
+#~ msgid "Answer icon"
+#~ msgstr "Απάντηση 1"
+
+#, fuzzy
+#~| msgid "Answers view"
+#~ msgid "Answer view"
+#~ msgstr "Προβολή απαντήσεων"
+
+#~ msgid "Border width"
+#~ msgstr "Πλάτος περιγράμματος"
+
+#~ msgid "Border style"
+#~ msgstr "Στυλ περιγράμματος"
+
+#, fuzzy
+#~| msgid "Show answer percent"
+#~ msgid "Show answers caption"
+#~ msgstr "Εμφάνιση ποσοστού απάντησης"
+
+#, fuzzy
+#~| msgid "Border style"
+#~ msgid "Border styles"
+#~ msgstr "Στυλ περιγράμματος"
+
+#, fuzzy
+#~| msgid "The style of the border"
+#~ msgid "Choose your preferred style of the border."
+#~ msgstr "Το στυλ του περιγράμματος"
+
+#~ msgid "Solid"
+#~ msgstr "Συμπαγής"
+
+#~ msgid "Dashed"
+#~ msgstr "Διακεκομμένη"
+
+#~ msgid "Dotted"
+#~ msgstr "Κουκίδες"
+
+#~ msgid "Double"
+#~ msgstr "Διπλό"
+
+#~ msgid "Groove"
+#~ msgstr "Αυλακιά"
+
+#~ msgid "Ridge"
+#~ msgstr "Ράχη"
+
+#~ msgid "Inset"
+#~ msgstr "Ένθεση"
+
+#~ msgid "Outset"
+#~ msgstr "Έναρξη"
+
+#~ msgid "Border radius"
+#~ msgstr "Ακτίνα περιγράμματος"
+
+#, fuzzy
+#~| msgid "Poll Text Color"
+#~ msgid "Buttons Text Color"
+#~ msgstr "Χρώμα κειμένου δημοσκόπησης"
+
+#, fuzzy
+#~| msgid "The color of the text in the poll"
+#~ msgid "Specify the color of the text written inside the poll button."
+#~ msgstr "Το χρώμα του κειμένου στη δημοσκόπηση"
+
+#, fuzzy
+#~| msgid "The shadow color of Poll container"
+#~ msgid "Custom class for poll container"
+#~ msgstr "Χρώμα στην σκιά του δοχείου δημοσκοπήσεων"
+
+#~ msgid "Custom CSS"
+#~ msgstr "Προσαρμοσμένο CSS"
+
+#, fuzzy
+#~| msgid "Answer styles"
+#~ msgid "Reset styles"
+#~ msgstr "Στυλ απάντησης"
+
+#~ msgid "Feature options"
+#~ msgstr "Επιλογές χαρακτηριστικών"
+
+#~ msgid "Status"
+#~ msgstr "Κατάσταση"
+
+#~ msgid "Published"
+#~ msgstr "Δημοσιεύθηκε"
+
+#~ msgid "Unpublished"
+#~ msgstr "Μη δημοσιευμένο"
+
+#~ msgid "Select category"
+#~ msgstr "Επιλέξτε Κατηγορία"
+
+#~ msgid "Create category"
+#~ msgstr "Δημιουργία κατηγορίας"
+
+#, fuzzy
+#~| msgid "Categories"
+#~ msgid "Choose Post Categories"
+#~ msgstr "Κατηγορίες"
+
+#~ msgid "Show Title"
+#~ msgstr "Εμφάνιση τίτλου"
+
+#, fuzzy
+#~| msgid "Title Alignment"
+#~ msgid "Alignment"
+#~ msgstr "Ευθυγράμμιση τίτλου"
+
+#, fuzzy
+#~| msgid "The appearance of the voting type of the poll"
+#~ msgid "Choose the alignment of the content of the poll."
+#~ msgstr "Η εμφάνιση του τύπου ψηφοφορίας της ψηφοφορίας"
+
+#, fuzzy
+#~| msgid "The background of the title in the poll"
+#~ msgid "Enable to show the creation date inside the poll."
+#~ msgstr "Το φόντο του τίτλου στη δημοσκόπηση"
+
+#, fuzzy
+#~| msgid "The color of the text in the poll"
+#~ msgid "Enable to show the author inside the poll."
+#~ msgstr "Το χρώμα του κειμένου στη δημοσκόπηση"
+
+#, fuzzy
+#~| msgid "Schedule the Poll"
+#~ msgid "Schedule"
+#~ msgstr "Προγραμματίστε την ψηφοφορία"
+
+#~ msgid "Start date:"
+#~ msgstr "Ημερομηνία έναρξης:"
+
+#~ msgid "End date:"
+#~ msgstr "Ημερομηνία λήξης:"
+
+#, fuzzy
+#~| msgid "Show Title"
+#~ msgid "Show timer"
+#~ msgstr "Εμφάνιση τίτλου"
+
+#, fuzzy
+#~| msgid "The background of the title in the poll"
+#~ msgid ""
+#~ "Enable to show the countdown or the end date in the poll, when it is "
+#~ "scheduled."
+#~ msgstr "Το φόντο του τίτλου στη δημοσκόπηση"
+
+#, fuzzy
+#~| msgid "Show votes count"
+#~ msgid "Show countdown"
+#~ msgstr "Εμφάνιση καταμέτρησης ψήφων"
+
+#, fuzzy
+#~| msgid "End date:"
+#~ msgid "Show end date"
+#~ msgstr "Ημερομηνία λήξης:"
+
+#~ msgid "Pre start message:"
+#~ msgstr "Μήνυμα προ έναρξης:"
+
+#~ msgid "Expiration message:"
+#~ msgstr "Μήνυμα λήξης:"
+
+#~ msgid "Show result button"
+#~ msgstr "Εμφάνιση κουμπιού αποτελέσματος"
+
+#, fuzzy
+#~| msgid "Show or hide the result button after the schedule"
+#~ msgid "Enable to show the result button after the schedule."
+#~ msgstr "Εμφάνιση ή απόκρυψη του κουμπιού αποτελεσμάτων μετά το πρόγραμμα"
+
+#, fuzzy
+#~| msgid ""
+#~| "Allow to abstain from voting and go directly to the results. If checked, "
+#~| "it is impossible to hide the results."
+#~ msgid ""
+#~ "Allow the user to directly see the results without participating in the "
+#~ "vote. If the option is checked, it is impossible to hide the results."
+#~ msgstr ""
+#~ "Αφήστε να αποφύγετε την ψηφοφορία και να μεταβείτε απευθείας στα "
+#~ "αποτελέσματα. Εάν επιλεγεί, είναι αδύνατο να αποκρύψετε τα αποτελέσματα."
+
+#~ msgid "Results button text"
+#~ msgstr "Κείμενο κουμπιού αποτελεσμάτων"
+
+#, fuzzy
+#~| msgid "The text of the button, that shows results"
+#~ msgid "Write the text of the button, which shows results."
+#~ msgstr "Το κείμενο του κουμπιού, που δείχνει τα αποτελέσματα"
+
+#~ msgid "Show passed users count"
+#~ msgstr "Εμφάνιση του αριθμού των επιτυχημένων χρηστών"
+
+#~ msgid "Redirect after voting"
+#~ msgstr "Ανακατεύθυνση μετά την ψηφοφορία"
+
+#, fuzzy
+#~| msgid "Redirect to custom URL after user submit the form."
+#~ msgid "Enable redirection to the custom URL after the user votes the poll."
+#~ msgstr ""
+#~ "Ανακατεύθυνση στην προσαρμοσμένη διεύθυνση URL αφού ο χρήστης υποβάλει τη "
+#~ "φόρμα."
+
+#~ msgid "URL"
+#~ msgstr "Διεύθυνση URL"
+
+#, fuzzy
+#~| msgid "The URL for redirecting after the user submits the form."
+#~ msgid ""
+#~ "Choose the Redirection URL for redirecting after the user takes the poll."
+#~ msgstr "Η διεύθυνση URL για ανακατεύθυνση αφού ο χρήστης υποβάλει τη φόρμα."
+
+#~ msgid "Delay"
+#~ msgstr "Καθυστέρηση"
+
+#, fuzzy
+#~| msgid "The URL for redirecting after the user submits the form."
+#~ msgid ""
+#~ "Choose the redirection delay in seconds after the user votes the poll."
+#~ msgstr "Η διεύθυνση URL για ανακατεύθυνση αφού ο χρήστης υποβάλει τη φόρμα."
+
+#~ msgid "Randomize Answers"
+#~ msgstr "Τυχαίες Απαντήσεις"
+
+#, fuzzy
+#~| msgid "Vote reason option"
+#~ msgid "Vote Reason"
+#~ msgstr "Επιλογή λόγου ψηφοφορίας"
+
+#, fuzzy
+#~| msgid "Allow users to add their answer variant"
+#~ msgid "Allow users to add their vote reason"
+#~ msgstr "Επιτρέψτε στους χρήστες να προσθέσουν την παραλλαγή απάντησης"
+
+#~ msgid "Enable Vote button"
+#~ msgstr "Ενεργοποίηση κουμπιού ψηφοφορίας"
+
+#~ msgid "Vote button text"
+#~ msgstr "Κείμενο κουμπιού ψηφοφορίας"
+
+#, fuzzy
+#~| msgid "The text of the vote button"
+#~ msgid "Write the text of the vote button."
+#~ msgstr "Το κείμενο του κουμπιού ψηφοφορίας"
+
+#, fuzzy
+#~| msgid "Enable Vote button"
+#~ msgid "Enable View more button"
+#~ msgstr "Ενεργοποίηση κουμπιού ψηφοφορίας"
+
+#~ msgid "Ascending"
+#~ msgstr "Αύξουσα"
+
+#~ msgid "Descending"
+#~ msgstr "Φθίνουσα"
+
+#~ msgid "Limitation of Users"
+#~ msgstr "Περιορισμός χρηστών"
+
+#~ msgid "This option allows to block the users who have already voted."
+#~ msgstr ""
+#~ "Αυτή η επιλογή επιτρέπει τον αποκλεισμό των χρηστών που έχουν ήδη ψηφίσει."
+
+#, fuzzy
+#~| msgid "Detects users"
+#~ msgid "Detects users by"
+#~ msgstr "Μόνο για επιλεγμένο ρόλο χρήστη"
+
+#~ msgid "By IP"
+#~ msgstr "Με IP"
+
+#~ msgid "By User ID"
+#~ msgstr "Με αναγνωριστικό χρήστη"
+
+#~ msgid "Message"
+#~ msgstr "Μήνυμα"
+
+#~ msgid "Redirect delay (sec)"
+#~ msgstr "Ανακατεύθυνση καθυστέρησης (δευτ.)"
+
+#, fuzzy
+#~| msgid "Completed count"
+#~ msgid "Attempts count"
+#~ msgstr "Ολοκληρώθηκε η μέτρηση"
+
+#, fuzzy
+#~| msgid "You don't have permissions for passing the poll"
+#~ msgid "Specify the count of the attempts per user for passing the poll."
+#~ msgstr "Δεν έχετε δικαιώματα για την επιτυχία της ψηφοφορίας"
+
+#~ msgid "Only for logged in users"
+#~ msgstr "Μόνο για συνδεδεμένους χρήστες"
+
+#, fuzzy
+#~| msgid "Message for unauthorized users."
+#~ msgid "Write the message for unauthorized users."
+#~ msgstr "Μήνυμα για μη εξουσιοδοτημένους χρήστες."
+
+#~ msgid "Show Login form"
+#~ msgstr "Εμφάνιση φόρμας σύνδεσης"
+
+#~ msgid "Only for selected user role"
+#~ msgstr "Μόνο για επιλεγμένο ρόλο χρήστη"
+
+#~ msgid "User role"
+#~ msgstr "Ρόλος χρήστη"
+
+#, fuzzy
+#~| msgid "Show the number of users who passed the poll."
+#~ msgid "Choose a password for users to pass the poll."
+#~ msgstr "Εμφάνιση του αριθμού των χρηστών που πέρασαν τη δημοσκόπηση."
+
+#, fuzzy
+#~| msgid "Limitation of Users"
+#~ msgid "Limitation count of takers"
+#~ msgstr "Περιορισμός χρηστών"
+
+#, fuzzy
+#~| msgid "Show the number of users who passed the poll."
+#~ msgid "You can choose how many users can pass the poll."
+#~ msgstr "Εμφάνιση του αριθμού των χρηστών που πέρασαν τη δημοσκόπηση."
+
+#, fuzzy
+#~| msgid "Show the number of users who passed the poll."
+#~ msgid "The number of users who can pass the poll."
+#~ msgstr "Εμφάνιση του αριθμού των χρηστών που πέρασαν τη δημοσκόπηση."
+
+#, fuzzy
+#~| msgid "Allow users to add their answer variant"
+#~ msgid "Allow to vote once per session"
+#~ msgstr "Επιτρέψτε στους χρήστες να προσθέσουν την παραλλαγή απάντησης"
+
+#~ msgid "User Data Settings"
+#~ msgstr "Ρυθμίσεις δεδομένων χρήστη"
+
+#~ msgid "Information form title"
+#~ msgstr "Τίτλος φόρμας πληροφοριών"
+
+#~ msgid "Enable Information Form"
+#~ msgstr "Ενεργοποίηση φόρμας πληροφοριών"
+
+#~ msgid "Form Fields"
+#~ msgstr "Πεδία φόρμας"
+
+#~ msgid "Select which fields the user should fill out."
+#~ msgstr "Επιλέξτε ποια πεδία πρέπει να συμπληρώσει ο χρήστης."
+
+#~ msgid "Required Fields"
+#~ msgstr "Απαιτούμενα πεδία"
+
+#~ msgid "Select which fields are required."
+#~ msgstr "Επιλέξτε ποια πεδία απαιτούνται."
+
+#~ msgid "Add custom fields"
+#~ msgstr "Προσθήκη προσαρμοσμένων πεδίων"
+
+#~ msgid "For creating custom fields click "
+#~ msgstr "Για τη δημιουργία προσαρμοσμένων πεδίων κάντε κλικ "
+
+#~ msgid "here"
+#~ msgstr "εδώ"
+
+#, fuzzy
+#~| msgid "MailChimp Settings"
+#~ msgid "Email settings"
+#~ msgstr "Ρυθμίσεις MailChimp"
+
+#, fuzzy
+#~| msgid "Results notification by e-mail"
+#~ msgid "Results notification by email"
+#~ msgstr "Ειδοποίηση αποτελεσμάτων μέσω e-mail"
+
+#, fuzzy
+#~| msgid ""
+#~| "If this option is on you will receive e-mail notification about votes."
+#~ msgid ""
+#~ "If the option is enabled, the admin(or your provided email) will receive "
+#~ "an email notification about votes at each time."
+#~ msgstr ""
+#~ "Εάν αυτή η επιλογή είναι ενεργοποιημένη, θα λάβετε ειδοποίηση μέσω "
+#~ "ηλεκτρονικού ταχυδρομείου σχετικά με τις ψήφους."
+
+#, fuzzy
+#~| msgid ""
+#~| "If you want set another e-mail, enter it here. Or leave blank for apply "
+#~| "admin e-mail."
+#~ msgid ""
+#~ "If you want to set another email, enter it here. Leave it blank for an "
+#~ "admin email."
+#~ msgstr ""
+#~ "Εάν θέλετε να ορίσετε ένα άλλο e-mail, εισαγάγετέ το εδώ. Ή αφήστε κενό "
+#~ "για την εφαρμογή e-mail διαχειριστή."
+
+#, fuzzy
+#~| msgid "The message will be displayed after submitting the poll."
+#~ msgid ""
+#~ "Send the message to the emails of the users after the submission of the "
+#~ "poll."
+#~ msgstr "Το μήνυμα θα εμφανιστεί μετά την υποβολή της δημοσκόπησης."
+
+#~ msgid "Integrations settings"
+#~ msgstr "Ρυθμίσεις ολοκληρώσεις"
+
+#~ msgid "MailChimp Settings"
+#~ msgstr "Ρυθμίσεις MailChimp"
+
+#, fuzzy, php-format
+#~| msgid "For enabling this option, please go to "
+#~ msgid "For enabling this option, please go to %s page and fill all options."
+#~ msgstr "Για να ενεργοποιήσετε αυτήν την επιλογή, μεταβείτε στη διεύθυνση "
+
+#~ msgid "this"
+#~ msgstr "αυτό"
+
+#~ msgid "Enable MailChimp"
+#~ msgstr "Ενεργοποίηση MailChimp"
+
+#~ msgid "MailChimp list"
+#~ msgstr "Λίστα MailChimp"
+
+#~ msgid "Campaign Monitor Settings"
+#~ msgstr "Ρυθμίσεις παρακολούθησης καμπάνιας"
+
+#, fuzzy
+#~| msgid "Campaign Monitor"
+#~ msgid "Enable Campaign Monitor"
+#~ msgstr "Παρακολούθηση καμπάνιας"
+
+#, fuzzy
+#~| msgid "Campaign Monitor"
+#~ msgid "Campaign Monitor list"
+#~ msgstr "Παρακολούθηση καμπάνιας"
+
+#, fuzzy
+#~| msgid "Select Poll"
+#~ msgid "Select List"
+#~ msgstr "Επιλέξτε δημοσκόπηση"
+
+#~ msgid "Zapier Integration Settings"
+#~ msgstr "Ρυθμίσεις Ενσωμάτωση Zapier"
+
+#, fuzzy
+#~| msgid "Zapier Integration Settings"
+#~ msgid "Enable Zapier Integration"
+#~ msgstr "Ρυθμίσεις Ενσωμάτωση Zapier"
+
+#~ msgid "Active Campaign Settings"
+#~ msgstr "Ενεργές ρυθμίσεις καμπάνιας"
+
+#, fuzzy
+#~| msgid "ActiveCampaign"
+#~ msgid "Enable ActiveCampaign"
+#~ msgstr "Ενεργή καμπάνια"
+
+#, fuzzy
+#~| msgid "ActiveCampaign"
+#~ msgid "ActiveCampaign list"
+#~ msgstr "Ενεργή καμπάνια"
+
+#, fuzzy
+#~| msgid "Active Campaign Settings"
+#~ msgid "ActiveCampaign automation"
+#~ msgstr "Ενεργές ρυθμίσεις καμπάνιας"
+
+#~ msgid "Slack Settings"
+#~ msgstr "Slack Ρυθμίσεις"
+
+#, fuzzy
+#~| msgid "Mailchimp integration"
+#~ msgid "Enable Slack integration"
+#~ msgstr "Ενσωμάτωση Mailchimp"
+
+#, fuzzy
+#~| msgid "Slack Settings"
+#~ msgid "Slack conversation"
+#~ msgstr "Slack Ρυθμίσεις"
+
+#, fuzzy
+#~| msgid "Select Poll"
+#~ msgid "Select Channel"
+#~ msgstr "Επιλέξτε δημοσκόπηση"
+
+#~ msgid "Show answer percent"
+#~ msgstr "Εμφάνιση ποσοστού απάντησης"
+
+#, fuzzy
+#~| msgid "Do not show voting results after the poll"
+#~ msgid ""
+#~ "Disable to show voting results to the users on the result page of the "
+#~ "poll."
+#~ msgstr "Να μην εμφανίζονται αποτελέσματα ψηφοφορίας μετά τη δημοσκόπηση"
+
+#~ msgid "Message instead of results"
+#~ msgstr "Μήνυμα αντί για αποτελέσματα"
+
+#~ msgid ""
+#~ "Message that will appear instead of the votting results after the poll"
+#~ msgstr ""
+#~ "Μήνυμα που θα εμφανιστεί αντί των αποτελεσμάτων ψηφοφορίας μετά την "
+#~ "ψηφοφορία"
+
+#, fuzzy
+#~| msgid "Message"
+#~ msgid "Result Message"
+#~ msgstr "Μήνυμα"
+
+#, fuzzy
+#~| msgid "The message will be displayed after submitting the poll."
+#~ msgid ""
+#~ "Write the message, which will be shown on the result page of the poll."
+#~ msgstr "Το μήνυμα θα εμφανιστεί μετά την υποβολή της δημοσκόπησης."
+
+#, fuzzy
+#~| msgid "Thanks for your answer!"
+#~ msgid "Thank you!"
+#~ msgstr "Ευχαριστούμε για την απάντηση σας!"
+
+#~ msgid "Results sorting"
+#~ msgstr "Ταξινόμηση αποτελεσμάτων"
+
+#~ msgid "Show votes count"
+#~ msgstr "Εμφάνιση καταμέτρησης ψήφων"
+
+#~ msgid "Loading effect"
+#~ msgstr "Εφέ φόρτωσης"
+
+#, fuzzy
+#~| msgid "Loading effect before displaying poll results."
+#~ msgid "Choose the loading effect of the displaying poll results."
+#~ msgstr "Φόρτωση εφέ πριν από την εμφάνιση αποτελεσμάτων δημοσκόπησης."
+
+#~ msgid "Loading GIF"
+#~ msgstr "Φόρτωση GIF"
+
+#~ msgid "Opacity"
+#~ msgstr "Αδιαφάνεια"
+
+#~ msgid "Blur"
+#~ msgstr "Θαμπάδα"
+
+#~ msgid "Custom GIF"
+#~ msgstr "Προσαρμοσμένο GIF"
+
+#~ msgid "Enable restart button"
+#~ msgstr "Ενεργοποίηση κουμπιού επανεκκίνησης"
+
+#~ msgid "Social share buttons"
+#~ msgstr "Κουμπιά κοινής χρήσης"
+
+#, fuzzy
+#~| msgid "Results sorting"
+#~ msgid "Results bar in RGBA"
+#~ msgstr "Ταξινόμηση αποτελεσμάτων"
+
+#, fuzzy
+#~| msgid "User Phone"
+#~ msgid "Users count"
+#~ msgstr "Τηλέφωνο χρήστη"
+
+#, fuzzy
+#~| msgid "Show result button"
+#~ msgid "Show results by"
+#~ msgstr "Εμφάνιση κουμπιού αποτελέσματος"
+
+#, fuzzy
+#~| msgid "Show answer percent"
+#~ msgid "Show Answer message"
+#~ msgstr "Εμφάνιση ποσοστού απάντησης"
+
+#~ msgid "Answer 1"
+#~ msgstr "Απάντηση 1"
+
+#~ msgid "Answer 2"
+#~ msgstr "Απάντηση 2"
+
+#~ msgid "Choosing"
+#~ msgstr "Επιλέγοντας"
+
+#~ msgid "Rating"
+#~ msgstr "Εκτίμηση"
+
+#~ msgid "Voting"
+#~ msgstr "Ψηφοφορία"
+
+#~ msgid "Versus"
+#~ msgstr "Έναντι"
+
+#~ msgid "Statistics"
+#~ msgstr "Στατιστική"
+
+#~ msgid "This property available only in PRO version"
+#~ msgstr "Αυτή η ιδιότητα διατίθεται μόνο σε έκδοση PRO"
+
+#~ msgid "Export"
+#~ msgstr "Εξαγωγή"
+
+#~ msgid "Changes saved."
+#~ msgstr "Οι αλλαγές αποθηκεύτηκαν."
+
+#~ msgid "Poll attribute ."
+#~ msgstr "Χαρακτηριστικό δημοσκόπησης."
+
+#~ msgid "Poll attribute deleted."
+#~ msgstr "Το χαρακτηριστικό δημοσκόπησης διαγράφηκε."
+
+#~ msgid "Shortcodes"
+#~ msgstr "Σύντομοι κωδικοί"
+
+#, fuzzy
+#~| msgid "Background color of the answers"
+#~ msgid "Sound for answers"
+#~ msgstr "Χρώμα φόντου των απαντήσεων"
+
+#, fuzzy
+#~| msgid "Select Poll"
+#~ msgid "Select sound"
+#~ msgstr "Επιλέξτε δημοσκόπηση"
+
+#, fuzzy
+#~| msgid "Poll Title"
+#~ msgid "Polls list table"
+#~ msgstr "Τίτλος ψηφοφορίας"
+
+#, fuzzy
+#~| msgid "Results button text"
+#~ msgid "Results up to a"
+#~ msgstr "Κείμενο κουμπιού αποτελεσμάτων"
+
+#, fuzzy
+#~| msgid "You not have permissions for voting."
+#~ msgid "Who will have permission to Poll menu"
+#~ msgstr "Δεν έχετε δικαιώματα ψήφου."
+
+#, fuzzy
+#~| msgid "Only for selected user role"
+#~ msgid "Select user role"
+#~ msgstr "Μόνο για επιλεγμένο ρόλο χρήστη"
+
+#~ msgid "MailChimp"
+#~ msgstr "MailChimp"
+
+#~ msgid "MailChimp Username"
+#~ msgstr "Όνομα χρήστη MailChimp"
+
+#~ msgid "MailChimp API Key"
+#~ msgstr "Κλειδί API MailChimp"
+
+#~ msgid "You can get your API key from your "
+#~ msgstr "Μπορείτε να λάβετε το κλειδί API από το "
+
+#~ msgid "Account Extras menu"
+#~ msgstr "Μενού πρόσθετων λογαριασμών"
+
+#~ msgid "Campaign Monitor"
+#~ msgstr "Παρακολούθηση καμπάνιας"
+
+#, fuzzy
+#~| msgid "You can get your API key from your "
+#~ msgid ""
+#~ "You can get your API key and Client ID from your Account Settings page"
+#~ msgstr "Μπορείτε να λάβετε το κλειδί API από το "
+
+#~ msgid "Zapier"
+#~ msgstr "Zapier"
+
+#~ msgid "ActiveCampaign"
+#~ msgstr "Ενεργή καμπάνια"
+
+#~ msgid "Slack"
+#~ msgstr "Slack"
+
+#, fuzzy
+#~| msgid "Zapier Integration Settings"
+#~ msgid "Slack Integration Setup Instructions"
+#~ msgstr "Ρυθμίσεις Ενσωμάτωση Zapier"
+
+#, fuzzy
+#~| msgid "Integrations"
+#~ msgid "Instructions"
+#~ msgstr "Ολοκληρώσεις"
+
+#, fuzzy
+#~| msgid "Slack Settings"
+#~ msgid "Slack Authorization"
+#~ msgstr "Slack Ρυθμίσεις"
+
+#, fuzzy
+#~| msgid "You can get your API key from your "
+#~ msgid ""
+#~ "You can get your API key from your <a href='#' target='_blank'>account</"
+#~ "a>."
+#~ msgstr "Μπορείτε να λάβετε το κλειδί API από το "
+
+#, fuzzy
+#~| msgid "Shortcode for all polls "
+#~ msgid "Shortcode for all polls"
+#~ msgstr "Σύντομος κωδικός για όλες τις δημοσκοπήσεις "
+
+#~ msgid "Shortcode for all polls "
+#~ msgstr "Σύντομος κωδικός για όλες τις δημοσκοπήσεις "
+
+#, fuzzy, php-format
+#~| msgid "Unpublished"
+#~ msgid "%1$spublished%2$s"
+#~ msgstr "Μη δημοσιευμένο"
+
+#, fuzzy
+#~| msgid "Shortcode result by ID "
+#~ msgid "Shortcode result by ID"
+#~ msgstr "Σύντομο αποτέλεσμα ανά αναγνωριστικό "
+
+#~ msgid "Shortcode result by ID "
+#~ msgstr "Σύντομο αποτέλεσμα ανά αναγνωριστικό "
+
+#~ msgid "Shortcode"
+#~ msgstr "Σύντομος κωδικός"
+
+#, fuzzy
+#~| msgid "Categories"
+#~ msgid "Poll Categories"
+#~ msgstr "Κατηγορίες"
+
+#, fuzzy
+#~| msgid "Poll category created."
+#~ msgid "Poll category shortcode"
+#~ msgstr "Δημιουργήθηκε κατηγορία δημοσκόπησης."
+
+#, fuzzy
+#~| msgid "General Settings"
+#~ msgid "Global Leaderboard Settings"
+#~ msgstr "Γενικές Ρυθμίσεις"
+
+#, fuzzy
+#~| msgid "User role"
+#~ msgid "Users group by"
+#~ msgstr "Ρόλος χρήστη"
+
+#~ msgid "ID"
+#~ msgstr "ID"
+
+#, fuzzy
+#~| msgid "Background color of the answers"
+#~ msgid "Top color of the leaderboard"
+#~ msgstr "Χρώμα φόντου των απαντήσεων"
+
+#, fuzzy
+#~| msgid "The categories of the poll"
+#~ msgid "The title of the poll."
+#~ msgstr "Οι κατηγορίες της δημοσκόπησης"
+
+#~ msgid "Save changes"
+#~ msgstr "Αποθήκευσε τις αλλαγές"
+
+#~ msgid "Category"
+#~ msgstr "Κατηγορία"
+
+#~ msgid "Edit"
+#~ msgstr "Επεξεργασία"
+
+#~ msgid "Poll category created."
+#~ msgstr "Δημιουργήθηκε κατηγορία δημοσκόπησης."
+
+#~ msgid "Poll category saved."
+#~ msgstr "Η κατηγορία δημοσκόπησης αποθηκεύτηκε."
+
+#~ msgid "Poll category deleted."
+#~ msgstr "Η κατηγορία δημοσκόπησης διαγράφηκε."
+
+#~ msgid "Guest"
+#~ msgstr "Επισκέπτης"
+
+#~ msgid "WP User"
+#~ msgstr "Χρήση WP"
+
+#~ msgid "Vote Datetime"
+#~ msgstr "Ώρα - ημερομηνία ψηφοφορίας"
+
+#~ msgid "Read Status"
+#~ msgstr "Διαβάστε την κατάσταση"
+
+#~ msgid "Duplicate"
+#~ msgstr "Αντίγραφο"
+
+#, fuzzy
+#~| msgid "See Results"
+#~ msgid "View Results"
+#~ msgstr "Δείτε τα αποτελέσματα"
+
+#~ msgid "Type"
+#~ msgstr "Τύπος"
+
+#~ msgid "Code Include"
+#~ msgstr "Κωδικός Συμπερίληψη"
+
+#, fuzzy
+#~| msgid "Poll created."
+#~ msgid "Created"
+#~ msgstr "Η δημοσκόπηση δημιουργήθηκε."
+
+#~ msgid "Completed count"
+#~ msgstr "Ολοκληρώθηκε η μέτρηση"
+
+#~ msgid "Poll created."
+#~ msgstr "Η δημοσκόπηση δημιουργήθηκε."
+
+#~ msgid "Poll saved."
+#~ msgstr "Η ψηφοφορία αποθηκεύτηκε."
+
+#~ msgid "Poll duplicated."
+#~ msgstr "Η ψηφοφορία διπλασιάστηκε."
+
+#~ msgid "Poll deleted."
+#~ msgstr "Η δημοσκόπηση διαγράφηκε."
+
+#~ msgid "Result"
+#~ msgstr "Αποτελέσματα"
+
+#~ msgid "Result deleted."
+#~ msgstr "Το αποτέλεσμα διαγράφηκε."
+
+#~ msgid "Filter"
+#~ msgstr "Φίλτρο"
+
+#~ msgid "Enter the poll title"
+#~ msgstr "Εισαγάγετε τον τίτλο της δημοσκόπησης"
+
+#~ msgid "Title Alignment"
+#~ msgstr "Ευθυγράμμιση τίτλου"
+
+#~ msgid "Thanks for your answer"
+#~ msgstr "Ευχαριστώ για την απάντησή σας"
+
+#, fuzzy
+#~| msgid "You will be redirected "
+#~ msgid "You will be redirected"
+#~ msgstr "Θα ανακατευθυνθείτε "
+
+#, fuzzy
+#~| msgid "Create category"
+#~ msgid "Created on"
+#~ msgstr "Δημιουργία κατηγορίας"
+
+#, fuzzy
+#~| msgid "Create category"
+#~ msgid "Created by"
+#~ msgstr "Δημιουργία κατηγορίας"
+
+#~ msgid "You must sign in for voting."
+#~ msgstr "Πρέπει να συνδεθείτε για ψηφοφορία."
+
+#~ msgid "You not have permissions for voting."
+#~ msgstr "Δεν έχετε δικαιώματα ψήφου."
+
+#~ msgid "Send"
+#~ msgstr "Αποστολή"
+
+#~ msgid "You have already voted."
+#~ msgstr "Έχετε ήδη ψηφίσει."
+
+#~ msgid "Redirecting after"
+#~ msgstr "Ανακατεύθυνση μετά"
+
+#~ msgid "The poll will be available soon."
+#~ msgstr "Η δημοσκόπηση θα είναι σύντομα διαθέσιμη."
+
+#~ msgid "The poll has expired."
+#~ msgstr "Η δημοσκόπηση έληξε."
+
+#~ msgid "Next"
+#~ msgstr "Επόμενο"
+
+#, fuzzy
+#~| msgid "Edit poll"
+#~ msgid "edit poll page"
+#~ msgstr "Επεξεργασία δημοσκόπησης"
+
+#~ msgid "page and fill all options."
+#~ msgstr "σελίδα και συμπληρώστε όλες τις επιλογές."

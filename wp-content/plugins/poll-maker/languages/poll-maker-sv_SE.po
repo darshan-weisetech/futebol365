@@ -1,0 +1,2530 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Poll Maker\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-02-15 18:12+0300\n"
+"PO-Revision-Date: 2026-02-15 18:12+0300\n"
+"Last-Translator: \n"
+"Language-Team: Swedish\n"
+"Language: sv_SE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.8\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n_noop:1,2;_x\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../admin/class-poll-maker-ays-admin.php:187
+msgid "Error"
+msgstr ""
+
+#: ../admin/class-poll-maker-ays-admin.php:188
+msgid "Can't load resource."
+msgstr ""
+
+#: ../admin/class-poll-maker-ays-admin.php:189
+msgid "Maybe something went wrong."
+msgstr ""
+
+#: ../admin/class-poll-maker-ays-admin.php:1706
+#: ../includes/class-poll-maker-feedback.php:131
+#: ../poll/poll-maker-block-new.js:64 ../poll/poll-maker-block.js:61
+msgid "Poll Maker"
+msgstr "Poll Maker"
+
+#: ../admin/class-poll-maker-ays-admin.php:1710
+msgid "CHRISTMAS SPECIAL"
+msgstr ""
+
+#: ../admin/class-poll-maker-ays-admin.php:1716
+#, fuzzy
+#| msgid "Limitation of Users"
+msgid "Limited time offer"
+msgstr "Begränsning av Användare"
+
+#: ../admin/class-poll-maker-ays-admin.php:1720
+#: ../admin/class-poll-maker-ays-admin.php:3028
+msgid "Click to copy"
+msgstr ""
+
+#: ../admin/class-poll-maker-ays-admin.php:1728
+#: ../admin/class-poll-maker-ays-admin.php:2361
+#: ../admin/class-poll-maker-ays-admin.php:3401
+#: ../admin/class-poll-maker-ays-admin.php:4100
+msgid "Buy Now"
+msgstr ""
+
+#: ../admin/class-poll-maker-ays-admin.php:1738
+#: ../admin/class-poll-maker-ays-admin.php:2326
+#: ../admin/class-poll-maker-ays-admin.php:2471
+#: ../admin/class-poll-maker-ays-admin.php:3057
+msgid "Dismiss ad"
+msgstr ""
+
+#: ../admin/class-poll-maker-ays-admin.php:1760
+msgid "Coupon code copied!"
+msgstr ""
+
+#: ../admin/class-poll-maker-ays-admin.php:2141
+msgid "Coupon Code"
+msgstr ""
+
+#: ../admin/class-poll-maker-ays-admin.php:2167
+msgid "Days"
+msgstr ""
+
+#: ../admin/class-poll-maker-ays-admin.php:2168
+msgid "Hours"
+msgstr ""
+
+#: ../admin/class-poll-maker-ays-admin.php:2169
+#, fuzzy
+#| msgid "Minute(s)"
+msgid "Minutes"
+msgstr "Minut(er)"
+
+#: ../admin/class-poll-maker-ays-admin.php:2170
+msgid "Seconds"
+msgstr ""
+
+#: ../admin/class-poll-maker-ays-admin.php:2184
+msgid "Get Your Deal"
+msgstr ""
+
+#: ../admin/class-poll-maker-ays-admin.php:2299
+#, php-format
+msgid "%1$s Mega Bundle %2$s (Quiz + Survey + Poll)"
+msgstr ""
+
+#: ../admin/class-poll-maker-ays-admin.php:2306
+msgid "30 Day Money Back Guarantee"
+msgstr ""
+
+#: ../admin/class-poll-maker-ays-admin.php:2363
+msgid "One-time payment"
+msgstr ""
+
+#: ../admin/class-poll-maker-ays-admin.php:2415
+msgid "days"
+msgstr ""
+
+#: ../admin/class-poll-maker-ays-admin.php:2420
+msgid "hours"
+msgstr ""
+
+#: ../admin/class-poll-maker-ays-admin.php:2425
+#, fuzzy
+#| msgid "Minute(s)"
+msgid "minutes"
+msgstr "Minut(er)"
+
+#: ../admin/class-poll-maker-ays-admin.php:2430
+msgid "seconds"
+msgstr ""
+
+#: ../admin/class-poll-maker-ays-admin.php:3021
+#, php-format
+msgid "Get the Pro Version of %s Poll Maker%s – 20%% OFF"
+msgstr ""
+
+#: ../admin/class-poll-maker-ays-admin.php:3022
+msgid "Unlock advanced features + 30 day Money Back Guarantee"
+msgstr ""
+
+#: ../admin/class-poll-maker-ays-admin.php:3037
+msgid "Only"
+msgstr ""
+
+#: ../admin/class-poll-maker-ays-admin.php:3037
+msgid "of 50 discounted licenses left"
+msgstr ""
+
+#: ../admin/class-poll-maker-ays-admin.php:3049
+msgid "Upgrade Now"
+msgstr ""
+
+#: ../admin/class-poll-maker-ays-admin.php:3339
+msgid "<span><a href='"
+msgstr ""
+
+#: ../admin/class-poll-maker-ays-admin.php:3846
+msgid "Fox LMS"
+msgstr ""
+
+#: ../admin/class-poll-maker-ays-admin.php:3847
+msgid "Build and manage online courses directly on your WordPress site."
+msgstr ""
+
+#: ../admin/class-poll-maker-ays-admin.php:3848
+msgid ""
+"With the FoxLMS plugin, you can create, sell, and organize courses, lessons, "
+"and quizzes, transforming your website into a dynamic e-learning platform."
+msgstr ""
+
+#: ../admin/class-poll-maker-ays-admin.php:3855
+msgid "Quiz Maker"
+msgstr ""
+
+#: ../admin/class-poll-maker-ays-admin.php:3856
+msgid "With our Quiz Maker plugin it’s easy to make a quiz in a short time."
+msgstr ""
+
+#: ../admin/class-poll-maker-ays-admin.php:3857
+msgid ""
+"You to add images to your quiz, order unlimited questions. Also you can "
+"style your quiz to satisfy your visitors."
+msgstr ""
+
+#: ../admin/class-poll-maker-ays-admin.php:3864
+msgid "Survey Maker"
+msgstr ""
+
+#: ../admin/class-poll-maker-ays-admin.php:3865
+msgid ""
+"Make amazing online surveys and get real-time feedback quickly and easily."
+msgstr ""
+
+#: ../admin/class-poll-maker-ays-admin.php:3866
+msgid ""
+"Learn what your website visitors want, need, and expect with the help of "
+"Survey Maker. Build surveys without limiting your needs."
+msgstr ""
+
+#: ../admin/class-poll-maker-ays-admin.php:3873
+msgid "Popup Box"
+msgstr ""
+
+#: ../admin/class-poll-maker-ays-admin.php:3874
+msgid ""
+"Popup everything you want! Create informative and promotional popups all in "
+"one plugin."
+msgstr ""
+
+#: ../admin/class-poll-maker-ays-admin.php:3875
+msgid ""
+"Attract your visitors and convert them into email subscribers and paying "
+"customers."
+msgstr ""
+
+#: ../admin/class-poll-maker-ays-admin.php:3882
+msgid "Gallery Photo Gallery"
+msgstr ""
+
+#: ../admin/class-poll-maker-ays-admin.php:3883
+msgid ""
+"Create unlimited galleries and include unlimited images in those galleries."
+msgstr ""
+
+#: ../admin/class-poll-maker-ays-admin.php:3884
+msgid ""
+"Represent images in an attractive way. Attract people with your own single "
+"and multiple free galleries from your photo library."
+msgstr ""
+
+#: ../admin/class-poll-maker-ays-admin.php:3891
+msgid "Secure Copy Content Protection"
+msgstr ""
+
+#: ../admin/class-poll-maker-ays-admin.php:3892
+msgid ""
+"Disable the right click, copy paste, content selection and copy shortcut "
+"keys on your website."
+msgstr ""
+
+#: ../admin/class-poll-maker-ays-admin.php:3893
+msgid ""
+"Protect web content from being plagiarized. Prevent plagiarism from your "
+"website with this easy to use plugin."
+msgstr ""
+
+#: ../admin/class-poll-maker-ays-admin.php:3900
+msgid "Personal Dictionary"
+msgstr ""
+
+#: ../admin/class-poll-maker-ays-admin.php:3901
+msgid ""
+"Allow your students to create personal dictionary, study and memorize the "
+"words."
+msgstr ""
+
+#: ../admin/class-poll-maker-ays-admin.php:3902
+msgid ""
+"Allow your users to create their own digital dictionaries and learn new "
+"words and terms as fastest as possible."
+msgstr ""
+
+#: ../admin/class-poll-maker-ays-admin.php:3909
+msgid "Chart Builder"
+msgstr ""
+
+#: ../admin/class-poll-maker-ays-admin.php:3910
+msgid "Chart Builder plugin allows you to create beautiful charts"
+msgstr ""
+
+#: ../admin/class-poll-maker-ays-admin.php:3911
+msgid " and graphs easily and quickly."
+msgstr ""
+
+#: ../admin/class-poll-maker-ays-admin.php:3918
+msgid "Easy Form"
+msgstr ""
+
+#: ../admin/class-poll-maker-ays-admin.php:3919
+msgid "Choose the best WordPress form builder plugin. "
+msgstr ""
+
+#: ../admin/class-poll-maker-ays-admin.php:3920
+msgid ""
+"Create contact forms, payment forms, surveys, and many more custom forms. "
+"Build forms easily with us."
+msgstr ""
+
+#: ../includes/class-poll-maker-feedback.php:108
+#, php-format
+msgid "Contact our %s support team %s to find and fix the issue."
+msgstr ""
+
+#: ../includes/lists/class-poll-maker-categories-list-table.php:202
+msgid "There are no poll categories yet."
+msgstr "Det finns inga frågekategorier ännu."
+
+#: ../includes/lists/class-poll-maker-each-results-poll-list-table.php:265
+#: ../includes/lists/class-poll-maker-results-list-table.php:206
+msgid "There are no results yet."
+msgstr "Det finns inga resultat ännu."
+
+#: ../includes/lists/class-poll-maker-polls-list-table.php:1485
+msgid "There are no polls yet."
+msgstr "Det finns inga omröstningar ännu."
+
+#: ../poll/poll-maker-block-new.js:78 ../poll/poll-maker-block.js:75
+msgid "Something went wrong please reload page"
+msgstr "Något gick fel vänligen ladda om sidan"
+
+#: ../poll/poll-maker-block-new.js:83 ../poll/poll-maker-block.js:80
+msgid "Loading..."
+msgstr "Laddar..."
+
+#: ../poll/poll-maker-block-new.js:90 ../poll/poll-maker-block.js:87
+msgid "There are no polls yet"
+msgstr "Det finns inga omröstningar ännu"
+
+#: ../poll/poll-maker-block-new.js:100 ../poll/poll-maker-block.js:97
+msgid "-Select Poll-"
+msgstr "-Välj Omröstning-"
+
+#: ../poll/poll-maker-block-new.js:113 ../poll/poll-maker-block.js:110
+msgid "Select Poll"
+msgstr "Välj Omröstning"
+
+#~ msgid "Add"
+#~ msgstr "Lägg till"
+
+#, fuzzy
+#~| msgid "Created on"
+#~ msgid "Great job"
+#~ msgstr "Skapad den"
+
+#~ msgid "Clear"
+#~ msgstr "Rensa"
+
+#, fuzzy
+#~| msgid "Clear"
+#~ msgid "Clear color"
+#~ msgstr "Rensa"
+
+#~ msgid "Default"
+#~ msgstr "Standard"
+
+#, fuzzy
+#~| msgid "Select versus icon"
+#~ msgid "Select default color"
+#~ msgstr "Ikonen för kontra"
+
+#, fuzzy
+#~| msgid "Select Poll"
+#~ msgid "Select Color"
+#~ msgstr "Välj Omröstning"
+
+#, fuzzy
+#~| msgid "Color 1"
+#~ msgid "Color value"
+#~ msgstr "Färg 1"
+
+#, fuzzy
+#~| msgid "Results per poll"
+#~ msgid "Results per poll"
+#~ msgstr "Resultat per fråga"
+
+#, fuzzy
+#~| msgid "Polls"
+#~ msgid "All Polls"
+#~ msgstr "Frågor"
+
+#, fuzzy
+#~| msgid "Add New"
+#~ msgid "Add new"
+#~ msgstr "Lägg till ny"
+
+#~ msgid "Categories"
+#~ msgstr "Kategorier"
+
+#~ msgid "Results"
+#~ msgstr "Resultat"
+
+#~ msgid "Custom Fields"
+#~ msgstr "Egna anpassade fält"
+
+#~ msgid "General Settings"
+#~ msgstr "Allmänna inställningar"
+
+#, fuzzy
+#~| msgid "Add new poll"
+#~ msgid "Add a New Poll"
+#~ msgstr "Lägg till ny omröstning"
+
+#, fuzzy
+#~| msgid "Select Poll"
+#~ msgid "Save the Poll"
+#~ msgstr "Välj Omröstning"
+
+#, fuzzy
+#~| msgid "Shortcode"
+#~ msgid "Copy the Shortcode"
+#~ msgstr "Shortcode"
+
+#~ msgid "Settings"
+#~ msgstr "Inställningar"
+
+#~ msgid "Polls"
+#~ msgstr "Frågor"
+
+#, fuzzy
+#~| msgid "Enable Information Form"
+#~ msgid "Poll Information"
+#~ msgstr "Aktivera informationsformulär"
+
+#~ msgid "Poll Title"
+#~ msgstr "Titel Fråga"
+
+#, fuzzy
+#~| msgid "Poll Title"
+#~ msgid "Poll Type"
+#~ msgstr "Titel Fråga"
+
+#~ msgid "Answer"
+#~ msgstr "Svar"
+
+#, fuzzy
+#~| msgid "Vote Datetime"
+#~ msgid "Answer Datetime"
+#~ msgstr "Datum för omröstning"
+
+#, fuzzy
+#~| msgid "Enable Information Form"
+#~ msgid "User Information"
+#~ msgstr "Aktivera informationsformulär"
+
+#~ msgid "User IP"
+#~ msgstr "Användar-IP"
+
+#, fuzzy
+#~| msgid "User Email"
+#~ msgid "User E-mail"
+#~ msgstr "Användarens e-post"
+
+#, fuzzy
+#~| msgid "Export to"
+#~ msgid "Support"
+#~ msgstr "Exportera till CSV"
+
+#, fuzzy
+#~| msgid "Poll Maker"
+#~ msgid "Poll Maker Plugin"
+#~ msgstr "Poll Maker"
+
+#~ msgid "Add new category"
+#~ msgstr "Lägg till kategori"
+
+#~ msgid "Edit category"
+#~ msgstr "Redigera kategori"
+
+#~ msgid "Title"
+#~ msgstr "Titel"
+
+#, fuzzy
+#~| msgid "The name of category"
+#~ msgid "Write the name of the category."
+#~ msgstr "Kategorinamn"
+
+#~ msgid "Description"
+#~ msgstr "Beskrivning"
+
+#~ msgid "Allow to skip polls"
+#~ msgstr "Tillåt att hoppa över frågor"
+
+#~ msgid "Next button text"
+#~ msgstr "Text på knappen Nästa"
+
+#, fuzzy
+#~| msgid "Save changes"
+#~ msgid "Save and close"
+#~ msgstr "Spara ändringar"
+
+#, fuzzy
+#~| msgid "Save Poll"
+#~ msgid "Save"
+#~ msgstr "Spara omröstning"
+
+#~ msgid "Add New"
+#~ msgstr "Lägg till ny"
+
+#~ msgid "Poll"
+#~ msgstr "Enkät"
+
+#~ msgid "page"
+#~ msgstr "sida"
+
+#, fuzzy
+#~| msgid "Please fill out the form:"
+#~ msgid "Fill out the information."
+#~ msgstr "Vänligen fyll i formuläret:"
+
+#, fuzzy
+#~| msgid "Shortcode"
+#~ msgid "shortcode"
+#~ msgstr "Shortcode"
+
+#, fuzzy
+#~| msgid "Show or hide the name of the poll"
+#~ msgid "How do I change the design of the poll?"
+#~ msgstr "Visa eller dölja namnet på omröstningen"
+
+#, fuzzy, php-format
+#~| msgid ""
+#~| "It allows participants to respond to your polls without ever revealing "
+#~| "their identities, even if they are registered on your website. After "
+#~| "enabling the option, the WP User and User IP will not be stored in the "
+#~| "database."
+#~ msgid ""
+#~ "%1$sYes!%2$s Please go to the Settings tab of the given poll, and find "
+#~ "the %3$sAllow anonymity%4$s option there. Enable it, and it will allow "
+#~ "participants to respond to your polls without ever revealing their "
+#~ "identities, even if they are registered on your website. After enabling "
+#~ "the option, the wp _user and User IP will not be stored in the database. "
+#~ "A giant step toward democracy!"
+#~ msgstr ""
+#~ "Det gör det möjligt för deltagarna att svara på dina omröstningar "
+#~ "anonymt, även om de är registrerade på din webbplats. Efter att du "
+#~ "aktiverat alternativet kommer WP User och User IP inte att lagras i "
+#~ "databasen."
+
+#, fuzzy
+#~| msgid "Show or hide the name of the poll"
+#~ msgid "How do I limit access to the poll?"
+#~ msgstr "Visa eller dölja namnet på omröstningen"
+
+#, fuzzy
+#~| msgid "Export to"
+#~ msgid "Support for"
+#~ msgstr "Exportera till CSV"
+
+#, fuzzy
+#~| msgid "Month(s)"
+#~ msgid "3 months"
+#~ msgstr "Månad(er)"
+
+#~ msgid "Allow multivote"
+#~ msgstr "Tillåt multipla/flera svar på fråga"
+
+#, fuzzy
+#~| msgid "Results Settings"
+#~ msgid "Results with charts"
+#~ msgstr "Inställningar för resultat"
+
+#, fuzzy
+#~| msgid "Export to"
+#~ msgid "Export results to CSV"
+#~ msgstr "Exportera till CSV"
+
+#, fuzzy
+#~| msgid "Custom Fields"
+#~ msgid "Custom Form Fields"
+#~ msgstr "Egna anpassade fält"
+
+#, fuzzy
+#~| msgid "Vote Reason"
+#~ msgid "Vote reason option"
+#~ msgstr "Röstningskommentar / anledning till röst"
+
+#, fuzzy
+#~| msgid "Message instead of results"
+#~ msgid "Text instead of results"
+#~ msgstr "Meddelande i stället för resultat"
+
+#, fuzzy
+#~| msgid "Enable Slack integration"
+#~ msgid "Mailchimp integration"
+#~ msgstr "Aktivera Slack-integrering"
+
+#, fuzzy
+#~| msgid "Campaign Monitor Settings"
+#~ msgid "Campaign Monitor integration"
+#~ msgstr "Inställningar för kampanjövervakare"
+
+#, fuzzy
+#~| msgid "Enable Zapier Integration"
+#~ msgid "Zapier integration"
+#~ msgstr "Aktivera Zapier-integrering"
+
+#, fuzzy
+#~| msgid "ActiveCampaign automation"
+#~ msgid "ActiveCampaign integration"
+#~ msgstr "ActiveCampaign-automatisering"
+
+#, fuzzy
+#~| msgid "Enable Slack integration"
+#~ msgid "Slack integration"
+#~ msgstr "Aktivera Slack-integrering"
+
+#, fuzzy
+#~| msgid "Password for passing Poll"
+#~ msgid "Password protected poll"
+#~ msgstr "Lösenord för att delta i omröstningen"
+
+#, fuzzy
+#~| msgid "Vote Reason"
+#~ msgid "Vote session"
+#~ msgstr "Röstningskommentar / anledning till röst"
+
+#, fuzzy
+#~| msgid "Send Mail to User"
+#~ msgid "Send mail to user"
+#~ msgstr "Skicka e-post till användare"
+
+#, fuzzy
+#~| msgid "Message instead of results"
+#~ msgid "Messages based on answers"
+#~ msgstr "Meddelande i stället för resultat"
+
+#, fuzzy
+#~| msgid "Poll category shortcode"
+#~ msgid "Display category shortcode"
+#~ msgstr "Omröstning - kategori shortcode"
+
+#, fuzzy
+#~| msgid "Enable Slack integration"
+#~ msgid "Klaviyo integration"
+#~ msgstr "Aktivera Slack-integrering"
+
+#, fuzzy
+#~| msgid "Enable Zapier Integration"
+#~ msgid "MyCred integration"
+#~ msgstr "Aktivera Zapier-integrering"
+
+#, fuzzy
+#~| msgid "Enable Zapier Integration"
+#~ msgid "Aweber integration"
+#~ msgstr "Aktivera Zapier-integrering"
+
+#, fuzzy
+#~| msgid "Enable Slack integration"
+#~ msgid "Mailpoet integration"
+#~ msgstr "Aktivera Slack-integrering"
+
+#~ msgid "Question"
+#~ msgstr "Fråga"
+
+#, fuzzy
+#~| msgid "Question"
+#~ msgid "Ask a question*"
+#~ msgstr "Fråga"
+
+#~ msgid "Answers"
+#~ msgstr "Svar"
+
+#, fuzzy
+#~| msgid "Add new poll"
+#~ msgid "Add an Option"
+#~ msgstr "Lägg till ny omröstning"
+
+#~ msgid "Allow not to vote"
+#~ msgstr "Tillåt att inte rösta"
+
+#, fuzzy
+#~| msgid "Minute(s)"
+#~ msgid "Min"
+#~ msgstr "Minut(er)"
+
+#~ msgid "Show author"
+#~ msgstr "Visa författare"
+
+#~ msgid "Hide results"
+#~ msgstr "Dölj resultat"
+
+#~ msgid "Add Image"
+#~ msgstr "Lägg till bild"
+
+#~ msgid "User Name"
+#~ msgstr "Användarnamn"
+
+#~ msgid "User Email"
+#~ msgstr "Användarens e-post"
+
+#, fuzzy
+#~| msgid "User role"
+#~ msgid "User Phone"
+#~ msgstr "Användarroller"
+
+#, fuzzy
+#~| msgid "Poll Title"
+#~ msgid "Poll title"
+#~ msgstr "Titel Fråga"
+
+#, fuzzy
+#~| msgid "User Name"
+#~ msgid "User's First Name"
+#~ msgstr "Användarnamn"
+
+#, fuzzy
+#~| msgid "User Name"
+#~ msgid "User's Last Name"
+#~ msgstr "Användarnamn"
+
+#, fuzzy
+#~| msgid "The categories of the poll"
+#~ msgid "Creation date of the poll"
+#~ msgstr "Kategorierna i omröstningen"
+
+#, fuzzy
+#~| msgid "User Name"
+#~ msgid "User's Display Name"
+#~ msgstr "Användarnamn"
+
+#, fuzzy
+#~| msgid "User Name"
+#~ msgid "User's Nick Name"
+#~ msgstr "Användarnamn"
+
+#, fuzzy
+#~| msgid "Poll answers sound"
+#~ msgid "Polls pass count"
+#~ msgstr "Omröstning - ljud vid svar"
+
+#~ msgid "Vote"
+#~ msgstr "Rösta"
+
+#~ msgid "See Results"
+#~ msgstr "Se resultat"
+
+#~ msgid "Thanks for your answer!"
+#~ msgstr "Tack för ditt svar!"
+
+#~ msgid "You have already voted"
+#~ msgstr "Du har redan röstat"
+
+#~ msgid "You don't have permissions for passing the poll"
+#~ msgstr "Du har inte behörighet att delta i omröstningen"
+
+#~ msgid "You must sign in for passing the poll"
+#~ msgstr "Du måste logga in för att delta i omröstningen"
+
+#~ msgid "The poll will be available soon!"
+#~ msgstr "Denna omröstning öppnas snart!"
+
+#~ msgid "The poll has expired!"
+#~ msgstr "Denna omröstning är slutförd!"
+
+#~ msgid "Please fill out the form:"
+#~ msgstr "Vänligen fyll i formuläret:"
+
+#~ msgid "Add new poll"
+#~ msgstr "Lägg till ny omröstning"
+
+#~ msgid "Edit poll"
+#~ msgstr "Redigera omröstning"
+
+#~ msgid "Edit Image"
+#~ msgstr "Redigera bild"
+
+#~ msgid "Name"
+#~ msgstr "Namn"
+
+#~ msgid "Email"
+#~ msgstr "E-post"
+
+#~ msgid "There are no lists"
+#~ msgstr "Det finns inga listor"
+
+#~ msgid "Shortcode text for editor"
+#~ msgstr "Shortcode för redigerare"
+
+#~ msgid "To insert the Poll into a page, post or text widget, copy shortcode"
+#~ msgstr ""
+#~ "Om du vill infoga omröstning på en sida, ett inlägg eller text kopierar "
+#~ "du shortcode"
+
+#~ msgid "and paste it at the desired place in the editor."
+#~ msgstr "och klistra in den på önskad plats i redigeraren."
+
+#~ msgid "General"
+#~ msgstr "Allmänt"
+
+#~ msgid "Styles"
+#~ msgstr "Stilar"
+
+#, fuzzy
+#~| msgid "Results sorting"
+#~ msgid "Results Settings"
+#~ msgstr "Resultat sortering"
+
+#~ msgid "Limitations"
+#~ msgstr "Begränsningar"
+
+#~ msgid "User Data"
+#~ msgstr "Användardata"
+
+#~ msgid "Integrations"
+#~ msgstr "Integrationer"
+
+#~ msgid "General options"
+#~ msgstr "Allmäna inställningar"
+
+#, fuzzy
+#~| msgid "See Results"
+#~ msgid "View"
+#~ msgstr "Se resultat"
+
+#, fuzzy
+#~| msgid "Add image on the question"
+#~ msgid "Add an image to the question."
+#~ msgstr "Lägg till bild på frågan"
+
+#~ msgid "Redirect URL"
+#~ msgstr "Redirect URL"
+
+#~ msgid "Image"
+#~ msgstr "Bild"
+
+#~ msgid "Delete"
+#~ msgstr "Ta bort"
+
+#, fuzzy
+#~| msgid "Settings"
+#~ msgid "Option Settings"
+#~ msgstr "Inställningar"
+
+#, fuzzy
+#~| msgid "Answer icon"
+#~ msgid "Answer Redirection"
+#~ msgstr "Ikon för Svar"
+
+#, fuzzy
+#~| msgid "Allow add custom answer"
+#~ msgid "Allow custom answer"
+#~ msgstr "Tillåt lägg till egna svar"
+
+#, fuzzy
+#~| msgid ""
+#~| "The opacity of the result bar color will depend on the number of votes. "
+#~| "Not work for 'Coffee Fluid' theme choosing list view poll."
+#~ msgid ""
+#~ "If the option is enabled, all the custom answers will be ticked in bulk "
+#~ "and will be displayed for the poll on the front end."
+#~ msgstr ""
+#~ "Resultatlistfärgens opacitet beror på antalet röster. Fungerar inte för "
+#~ "\"Coffee Fluid\" tema när man väljer lista för att visa omröstning."
+
+#, fuzzy
+#~| msgid "The categories of the poll"
+#~ msgid "Select the appearance of the poll."
+#~ msgstr "Kategorierna i omröstningen"
+
+#~ msgid "Emoji"
+#~ msgstr "Emoji"
+
+#, fuzzy
+#~| msgid "The appearance of the voting type of the poll"
+#~ msgid "Select the appearance and the scale of assessment of the poll."
+#~ msgstr "Utseendet på röstningstypen för omröstningen"
+
+#, fuzzy
+#~| msgid "Start"
+#~ msgid "Stars"
+#~ msgstr "Start"
+
+#, fuzzy
+#~| msgid "Allow users to add their vote reason"
+#~ msgid "Allow users to add their fake votes to each option."
+#~ msgstr "Tillåt användare att lägga till anledning till att de röstat"
+
+#~ msgid "Width"
+#~ msgstr "Bredd"
+
+#~ msgid "Styling options"
+#~ msgstr "Styling/Stil alternativ"
+
+#~ msgid "Theme"
+#~ msgstr "Tema"
+
+#~ msgid "Minimal"
+#~ msgstr "Minimal"
+
+#~ msgid "Classic Light"
+#~ msgstr "Klassisk ljus"
+
+#~ msgid "Classic Dark"
+#~ msgstr "Klassisk Mörk"
+
+#~ msgid "Aquamarine"
+#~ msgstr "Aquamarine"
+
+#, fuzzy
+#~| msgid "Poll Title"
+#~ msgid "Poll styles"
+#~ msgstr "Titel Fråga"
+
+#~ msgid "Main Color"
+#~ msgstr "Huvudfärg"
+
+#, fuzzy
+#~| msgid ""
+#~| "The central color of the poll (border color, the color of the rate "
+#~| "percentage and the background color of sending button)"
+#~ msgid ""
+#~ "Specify the color of the poll's main attributes. It includes border "
+#~ "color, the color of the rate percentage and the background color of the "
+#~ "vote button."
+#~ msgstr ""
+#~ "Den centrala färgen i omröstningsytan (kantfärg, färgen på ränteprocenten "
+#~ "och knappen för bakgrundsfärg för att skicka)"
+
+#~ msgid "Text Color"
+#~ msgstr "Textfärg"
+
+#, fuzzy
+#~| msgid "The color of the text in the poll"
+#~ msgid "Specify the color of the text written inside the poll."
+#~ msgstr "Färgen på texten i omröstningen"
+
+#~ msgid "Icons Color"
+#~ msgstr "Ikonfärg"
+
+#, fuzzy
+#~| msgid "The icons color in voting and rating types"
+#~ msgid "Specify the icon color in voting and rating types."
+#~ msgstr "Ikonernas färg i röstning och klassificeringstyper"
+
+#~ msgid "Background Color"
+#~ msgstr "Bakgrundsfärg"
+
+#, fuzzy
+#~| msgid "The background of the title in the poll"
+#~ msgid "Specify the background color of the poll."
+#~ msgstr "Bakgrunden till titeln på omröstningen"
+
+#~ msgid "Background Image"
+#~ msgstr "Bakgrundsbild"
+
+#, fuzzy
+#~| msgid "Background image of the poll"
+#~ msgid "Background image position"
+#~ msgstr "Bakgrundsbild för omröstningen"
+
+#, fuzzy
+#~| msgid "Background image of the poll"
+#~ msgid "The position of background image of the polls"
+#~ msgstr "Bakgrundsbild för omröstningen"
+
+#, fuzzy
+#~| msgid "Left"
+#~ msgid "Left Top"
+#~ msgstr "Vänster"
+
+#, fuzzy
+#~| msgid "Center"
+#~ msgid "Left Center"
+#~ msgstr "Centrera"
+
+#, fuzzy
+#~| msgid "Bottom"
+#~ msgid "Left Bottom"
+#~ msgstr "Botten"
+
+#, fuzzy
+#~| msgid "Center"
+#~ msgid "Center Top"
+#~ msgstr "Centrera"
+
+#, fuzzy
+#~| msgid "Center"
+#~ msgid "Center Center"
+#~ msgstr "Centrera"
+
+#, fuzzy
+#~| msgid "Bottom"
+#~ msgid "Center Bottom"
+#~ msgstr "Botten"
+
+#, fuzzy
+#~| msgid "Right"
+#~ msgid "Right Top"
+#~ msgstr "Höger"
+
+#, fuzzy
+#~| msgid "Center"
+#~ msgid "Right Center"
+#~ msgstr "Centrera"
+
+#, fuzzy
+#~| msgid "Bottom"
+#~ msgid "Right Bottom"
+#~ msgstr "Botten"
+
+#, fuzzy
+#~| msgid "Background image of the poll"
+#~ msgid "Hide background image on result page"
+#~ msgstr "Bakgrundsbild för omröstningen"
+
+#~ msgid "Box shadow"
+#~ msgstr "Ruta skuggad"
+
+#~ msgid "Box shadow color"
+#~ msgstr "Färg för ytskugga"
+
+#~ msgid "The shadow color of Poll container"
+#~ msgstr "Skuggfärgen på Omröstnings-behållaren"
+
+#~ msgid "Background Gradient"
+#~ msgstr "Bakgrundsgradient"
+
+#~ msgid "Color 1"
+#~ msgstr "Färg 1"
+
+#~ msgid "Color 2"
+#~ msgstr "Färg 2"
+
+#~ msgid "Gradient direction"
+#~ msgstr "Riktning för övertoning"
+
+#~ msgid "Vertical"
+#~ msgstr "Vertikal"
+
+#~ msgid "Horizontal"
+#~ msgstr "Horisontell"
+
+#~ msgid "Diagonal left to right"
+#~ msgstr "Diagonal vänster till höger"
+
+#~ msgid "Diagonal right to left"
+#~ msgstr "Diagonal höger till vänster"
+
+#, fuzzy
+#~| msgid "Show Title"
+#~ msgid "Logo title"
+#~ msgstr "Visa rubrik"
+
+#, fuzzy
+#~| msgid "Specify the time for one session."
+#~ msgid "Specify the title of the Logo image."
+#~ msgstr "Ange tid för en session."
+
+#~ msgid "Title Background Color"
+#~ msgstr "Bakrungsfärg rubrik"
+
+#, fuzzy
+#~| msgid "Background color of the answers"
+#~ msgid "Specify the background color of the title."
+#~ msgstr "Bakgrundsfärg för svaren"
+
+#~ msgid "Left"
+#~ msgstr "Vänster"
+
+#~ msgid "Center"
+#~ msgstr "Centrera"
+
+#~ msgid "Right"
+#~ msgstr "Höger"
+
+#~ msgid "Color"
+#~ msgstr "Färg"
+
+#~ msgid "Icon size (px)"
+#~ msgstr "Ikon storlek (px)"
+
+#, fuzzy
+#~| msgid ""
+#~| "The size of the icons in rating and voting types of the poll (it should "
+#~| "be 10 and more)"
+#~ msgid ""
+#~ "Specify the size of the icons in rating and voting types of the poll in "
+#~ "pixels. It should be 10 and more."
+#~ msgstr ""
+#~ "Storleken på ikonerna i betyg- och frågetyper i omröstningen (det bör "
+#~ "vara 10 eller fler)"
+
+#~ msgid "Width (px)"
+#~ msgstr "Bredd (px)"
+
+#, fuzzy, no-php-format
+#~ msgid "For 100% leave blank"
+#~ msgstr "For 100% leave blank"
+
+#, fuzzy
+#~| msgid "Answer styles"
+#~ msgid "Question styles"
+#~ msgstr "Styling/Stil på Svar"
+
+#~ msgid "Cover"
+#~ msgstr "Täck"
+
+#~ msgid "None"
+#~ msgstr "Ingen"
+
+#, fuzzy
+#~| msgid "Answer styles"
+#~ msgid "Answer Styles"
+#~ msgstr "Styling/Stil på Svar"
+
+#, fuzzy
+#~| msgid "Enable answers sound"
+#~ msgid "Enable answer styles"
+#~ msgstr "Aktivera ljudsvar"
+
+#~ msgid "Answers Background Color"
+#~ msgstr "Bakgrundsfärg för Svar"
+
+#, fuzzy
+#~| msgid "Background color of the answers"
+#~ msgid "Specify the background color of the answers' boxes."
+#~ msgstr "Bakgrundsfärg för svaren"
+
+#~ msgid "Border side"
+#~ msgstr "Kant för  sidan"
+
+#, fuzzy
+#~| msgid "Choose your preferred icon for the answers"
+#~ msgid "Choose your preferred style for the border of the answers' boxes."
+#~ msgstr "Välj önskad ikon för svaren"
+
+#~ msgid "All sides"
+#~ msgstr "Alla sidor"
+
+#~ msgid "Top"
+#~ msgstr "Topp"
+
+#~ msgid "Bottom"
+#~ msgstr "Botten"
+
+#, fuzzy
+#~| msgid ""
+#~| "This property is used to specify how an image should be resized to fit "
+#~| "its container"
+#~ msgid ""
+#~ "Specify how an answers’ images should be resized to fit its container."
+#~ msgstr ""
+#~ "Den här egenskapen används för att ange hur en bild ska anpassas för att "
+#~ "behållaren"
+
+#~ msgid "Answer icon"
+#~ msgstr "Ikon för Svar"
+
+#, fuzzy
+#~| msgid "Choose your preferred icon for the answers"
+#~ msgid "Choose your preferred icon for the answers."
+#~ msgstr "Välj önskad ikon för svaren"
+
+#, fuzzy
+#~| msgid "Answers view"
+#~ msgid "Answer view"
+#~ msgstr "Svar"
+
+#~ msgid "Disable answers hover"
+#~ msgstr "Inaktivera hover för svar"
+
+#, fuzzy
+#~| msgid "This option disables hover effect for answers"
+#~ msgid "Disable the hover effect for answers."
+#~ msgstr "Med det här alternativet inaktiveras hovringseffekten för svar"
+
+#~ msgid "Border width"
+#~ msgstr "Rambredd"
+
+#~ msgid "Border style"
+#~ msgstr "Ramstil"
+
+#~ msgid "Show answers caption"
+#~ msgstr "Visa bildtext för svaret"
+
+#~ msgid ""
+#~ "Show answers caption near the answer image. This option will be work only "
+#~ "when answer has image."
+#~ msgstr ""
+#~ "Visa bildtext för svaret, nära svarsbilden. Det här alternativet kommer "
+#~ "att fungera först när svaret har en bildinlagd."
+
+#, fuzzy
+#~| msgid "Border style"
+#~ msgid "Border styles"
+#~ msgstr "Ramstil"
+
+#, fuzzy
+#~| msgid "Choose your preferred icon for the answers"
+#~ msgid "Choose your preferred style of the border."
+#~ msgstr "Välj önskad ikon för svaren"
+
+#~ msgid "Solid"
+#~ msgstr "Solid"
+
+#~ msgid "Dashed"
+#~ msgstr "Streckad"
+
+#~ msgid "Dotted"
+#~ msgstr "Prickad"
+
+#~ msgid "Double"
+#~ msgstr "Dubbel"
+
+#~ msgid "Groove"
+#~ msgstr "Räfflad"
+
+#~ msgid "Ridge"
+#~ msgstr "Upphöjning"
+
+#~ msgid "Inset"
+#~ msgstr "Infälld"
+
+#~ msgid "Outset"
+#~ msgstr "Outset"
+
+#~ msgid "Border radius"
+#~ msgstr "Kantradie"
+
+#, fuzzy
+#~| msgid ""
+#~| "The width of the border. For Coffee Fluid theme border-width will always "
+#~| "be 1px."
+#~ msgid ""
+#~ "Specify the width of the border. For the Coffee Fluid theme, border-width "
+#~ "will always be 1px."
+#~ msgstr ""
+#~ "Bredden på kantlinjen. För Coffe Fluid tema border-bredd kommer alltid "
+#~ "att vara 1px."
+
+#, fuzzy
+#~| msgid "Text Color"
+#~ msgid "Buttons Text Color"
+#~ msgstr "Textfärg"
+
+#, fuzzy
+#~| msgid "The color of the text in the poll"
+#~ msgid "Specify the color of the text written inside the poll button."
+#~ msgstr "Färgen på texten i omröstningen"
+
+#, fuzzy
+#~| msgid "Background Color"
+#~ msgid "Buttons Background Color"
+#~ msgstr "Bakgrundsfärg"
+
+#, fuzzy
+#~| msgid "The background of the title in the poll"
+#~ msgid "Specify the background color of the poll button."
+#~ msgstr "Bakgrunden till titeln på omröstningen"
+
+#~ msgid "Custom class for poll container"
+#~ msgstr "Anpassad klass för fråge-behållare"
+
+#~ msgid "Custom CSS"
+#~ msgstr "Anpassad CSS"
+
+#, fuzzy
+#~| msgid "Answer styles"
+#~ msgid "Reset styles"
+#~ msgstr "Styling/Stil på Svar"
+
+#~ msgid "Feature options"
+#~ msgstr "Alternativ för funktioner"
+
+#~ msgid "Status"
+#~ msgstr "Status"
+
+#~ msgid "Published"
+#~ msgstr "Publicerad"
+
+#~ msgid "Unpublished"
+#~ msgstr "Ej publiserad"
+
+#, fuzzy
+#~| msgid "Create category"
+#~ msgid "Select category"
+#~ msgstr "Skapa kategori"
+
+#~ msgid "Create category"
+#~ msgstr "Skapa kategori"
+
+#~ msgid "Create post for poll"
+#~ msgstr "Skapa inlägg för omröstning"
+
+#~ msgid ""
+#~ "A new WordPress post will be created automatically and will include the "
+#~ "shortcode of this poll. This function will be executed only once. You can "
+#~ "find this post on Posts page, which will have the same title as the poll. "
+#~ "The image of the poll will be the featured image of the post."
+#~ msgstr ""
+#~ "En ny WordPress post kommer att skapas automatiskt och kommer att "
+#~ "innehålla shortcode för denna omröstning. Denna funktion kommer att "
+#~ "utföras endast en gång. Du hittar det här inlägget på din Inläggsida, som "
+#~ "kommer att ha samma titel som omröstningen. Bilden av omröstningen kommer "
+#~ "att vara den presenterade bilden av inlägget."
+
+#~ msgid "Choose Post Categories"
+#~ msgstr "Välj Inläggs Kategorier"
+
+#, fuzzy
+#~| msgid "See Results"
+#~ msgid "View Post"
+#~ msgstr "Se resultat"
+
+#, fuzzy
+#~| msgid "Edit poll"
+#~ msgid "Edit Post"
+#~ msgstr "Redigera omröstning"
+
+#~ msgid "Show Title"
+#~ msgstr "Visa rubrik"
+
+#, fuzzy
+#~| msgid "Title Alignment"
+#~ msgid "Alignment"
+#~ msgstr "Rubrikjustering"
+
+#, fuzzy
+#~| msgid "Choose the method of detection of the user. "
+#~ msgid "Choose the alignment of the content of the poll."
+#~ msgstr "Välj metod för identifiering av användaren. "
+
+#, fuzzy
+#~| msgid "Allow anonymity"
+#~ msgid "Allow Anonymity"
+#~ msgstr "Tillåt anonymitet (anonyma svar)"
+
+#~ msgid "Allow anonymity"
+#~ msgstr "Tillåt anonymitet (anonyma svar)"
+
+#~ msgid ""
+#~ "It allows participants to respond to your polls without ever revealing "
+#~ "their identities, even if they are registered on your website. After "
+#~ "enabling the option, the WP User and User IP will not be stored in the "
+#~ "database."
+#~ msgstr ""
+#~ "Det gör det möjligt för deltagarna att svara på dina omröstningar "
+#~ "anonymt, även om de är registrerade på din webbplats. Efter att du "
+#~ "aktiverat alternativet kommer WP User och User IP inte att lagras i "
+#~ "databasen."
+
+#, fuzzy
+#~| msgid "Enable Information Form"
+#~ msgid "Poll main URL"
+#~ msgstr "Aktivera informationsformulär"
+
+#~ msgid "Show creation date"
+#~ msgstr "Visa skapandedatum"
+
+#, fuzzy
+#~| msgid "Show the countdown or end date time in the poll."
+#~ msgid "Enable to show the creation date inside the poll."
+#~ msgstr "Visa nedräkningen eller slutdatum i omröstningen."
+
+#, fuzzy
+#~| msgid "The color of the text in the poll"
+#~ msgid "Enable to show the author inside the poll."
+#~ msgstr "Färgen på texten i omröstningen"
+
+#~ msgid "Schedule"
+#~ msgstr "Schema"
+
+#~ msgid "Start date:"
+#~ msgstr "Startdatum:"
+
+#~ msgid "End date:"
+#~ msgstr "Slutdatum:"
+
+#~ msgid "Show timer"
+#~ msgstr "Visa timer"
+
+#, fuzzy
+#~| msgid "Show the countdown or end date time in the poll."
+#~ msgid ""
+#~ "Enable to show the countdown or the end date in the poll, when it is "
+#~ "scheduled."
+#~ msgstr "Visa nedräkningen eller slutdatum i omröstningen."
+
+#~ msgid "Show countdown"
+#~ msgstr "Visa nedräkning"
+
+#~ msgid "Show end date"
+#~ msgstr "Visa slutdatum"
+
+#~ msgid "Pre start message:"
+#~ msgstr "Före start meddelande:"
+
+#~ msgid "Expiration message:"
+#~ msgstr "Meddelande om förfallodatum:"
+
+#~ msgid "Show result button"
+#~ msgstr "Knappen Visa resultat"
+
+#, fuzzy
+#~ msgid "Enable to show the result button after the schedule."
+#~ msgstr "Visa eller dölj resultatknappen efter schemat"
+
+#, fuzzy
+#~| msgid "Show result button"
+#~ msgid "With See Results button"
+#~ msgstr "Knappen Visa resultat"
+
+#, fuzzy
+#~| msgid "Show result button"
+#~ msgid "Without See Results button"
+#~ msgstr "Knappen Visa resultat"
+
+#, fuzzy
+#~| msgid ""
+#~| "Allow to abstain from voting and go directly to the results. If checked, "
+#~| "it is impossible to hide the results."
+#~ msgid ""
+#~ "Allow the user to directly see the results without participating in the "
+#~ "vote. If the option is checked, it is impossible to hide the results."
+#~ msgstr ""
+#~ "Låt avstå från att rösta och gå direkt till resultaten. Om markerad är "
+#~ "det omöjligt att dölja resultaten."
+
+#~ msgid "Results button text"
+#~ msgstr "Resultat knapptext"
+
+#, fuzzy
+#~| msgid "The text of the button, that shows results"
+#~ msgid "Write the text of the button, which shows results."
+#~ msgstr "Texten på knappen som visar resultat"
+
+#~ msgid "Show passed users count"
+#~ msgstr "Visa antalet användare som genomfört"
+
+#~ msgid "Redirect after voting"
+#~ msgstr "Omdirigering efter röstning"
+
+#, fuzzy
+#~| msgid "Redirect to custom URL after user submit the form."
+#~ msgid "Enable redirection to the custom URL after the user votes the poll."
+#~ msgstr ""
+#~ "Omdirigera till anpassad URL efter att användaren har skickat formuläret."
+
+#~ msgid "URL"
+#~ msgstr "URL"
+
+#, fuzzy
+#~| msgid "The URL for redirecting after the user submits the form."
+#~ msgid ""
+#~ "Choose the Redirection URL for redirecting after the user takes the poll."
+#~ msgstr "URL:en för omdirigering när användaren har skickat in omröstningen."
+
+#~ msgid "Delay"
+#~ msgstr "Fördröj"
+
+#, fuzzy
+#~| msgid "The URL for redirecting after the user submits the form."
+#~ msgid ""
+#~ "Choose the redirection delay in seconds after the user votes the poll."
+#~ msgstr "URL:en för omdirigering när användaren har skickat in omröstningen."
+
+#~ msgid "Randomize Answers"
+#~ msgstr "Blanda svar"
+
+#~ msgid "Enable answers sound"
+#~ msgstr "Aktivera ljudsvar"
+
+#~ msgid "Sound are selected. For change sounds go to"
+#~ msgstr "Ljud är valt. För förändring ljud gå till"
+
+#~ msgid "Sound are not selected. For selecting sounds go to"
+#~ msgstr "Ljud är inte valt. För att välja ljud gå till"
+
+#~ msgid "Vote Reason"
+#~ msgstr "Röstningskommentar / anledning till röst"
+
+#~ msgid "Allow users to add their vote reason"
+#~ msgstr "Tillåt användare att lägga till anledning till att de röstat"
+
+#~ msgid "Enable Vote button"
+#~ msgstr "Knappen Aktivera omröstning"
+
+#~ msgid "Vote button text"
+#~ msgstr "Text på knappen rösta"
+
+#, fuzzy
+#~| msgid "The text of the vote button"
+#~ msgid "Write the text of the vote button."
+#~ msgstr "Texten på knappen för röstning"
+
+#, fuzzy
+#~| msgid "Enable Vote button"
+#~ msgid "Enable View more button"
+#~ msgstr "Knappen Aktivera omröstning"
+
+#~ msgid "Count"
+#~ msgstr "Antal"
+
+#~ msgid "Ascending"
+#~ msgstr "Stigande"
+
+#~ msgid "Descending"
+#~ msgstr "Fallande"
+
+#~ msgid "Maximum number of attempts per user"
+#~ msgstr "Maximalt antal försök per användare"
+
+#, fuzzy
+#~| msgid "Detects users"
+#~ msgid "Detects users by"
+#~ msgstr "Upptäcker användare"
+
+#, fuzzy
+#~| msgid "Choose the method of detection of the user. "
+#~ msgid "Choose the method of detection of the user:"
+#~ msgstr "Välj metod för identifiering av användaren. "
+
+#~ msgid "By IP"
+#~ msgstr "Genom IP"
+
+#~ msgid "By User ID"
+#~ msgstr "Användar-ID"
+
+#~ msgid "Message"
+#~ msgstr "Meddelande"
+
+#~ msgid ""
+#~ "Write the message for those who have already passed the poll under the "
+#~ "given conditions."
+#~ msgstr ""
+#~ "Skriv meddelandet för dem som redan har klarat omröstningen under givna "
+#~ "villkor."
+
+#, fuzzy
+#~| msgid ""
+#~| "Write the message for those who have already passed the poll under the "
+#~| "given conditions."
+#~ msgid ""
+#~ "Enable redirection to the custom URL for those who have already passed "
+#~ "the poll under the given conditions."
+#~ msgstr ""
+#~ "Skriv meddelandet för dem som redan har klarat omröstningen under givna "
+#~ "villkor."
+
+#~ msgid "Redirect delay (sec)"
+#~ msgstr "Omdirigera fördröjning i (sek)"
+
+#, fuzzy
+#~| msgid "If you set it to 0, redirection will be disabled"
+#~ msgid ""
+#~ "Choose the redirection delay in seconds. If you set it to 0, the "
+#~ "redirection will be disabled."
+#~ msgstr "Om du ställer in den på 0, kommer omdirigering att inaktiveras"
+
+#~ msgid "Attempts count"
+#~ msgstr "Antalet försök"
+
+#~ msgid "Specify the count of the attempts per user for passing the poll."
+#~ msgstr "Ange antalet försök per användare för att genomföra omröstningen."
+
+#~ msgid "Only for logged in users"
+#~ msgstr "Endast för inloggade användare"
+
+#, fuzzy
+#~| msgid ""
+#~| "After enabling this option, you can manage the counts of the attempts "
+#~| "per user for passing the poll."
+#~ msgid ""
+#~ "After enabling this option, only logged-in users will be able to pass the "
+#~ "poll."
+#~ msgstr ""
+#~ "När du har aktiverat det här alternativet kan du hantera antalet försök "
+#~ "per användare för att genomföra omröstningen."
+
+#, fuzzy
+#~| msgid "Message for unauthorized users."
+#~ msgid "Write the message for unauthorized users."
+#~ msgstr "Meddelande till obehöriga användare."
+
+#~ msgid "Show Login form"
+#~ msgstr "Visa inloggningsformulär"
+
+#~ msgid "Only for selected user role"
+#~ msgstr "Endast för vald användarroll"
+
+#, fuzzy
+#~| msgid ""
+#~| "After enabling this option, you can manage the counts of the attempts "
+#~| "per user for passing the poll."
+#~ msgid ""
+#~ "After enabling this option, only the user roles mentioned in the list "
+#~ "will be able to pass the poll."
+#~ msgstr ""
+#~ "När du har aktiverat det här alternativet kan du hantera antalet försök "
+#~ "per användare för att genomföra omröstningen."
+
+#~ msgid "User role"
+#~ msgstr "Användarroller"
+
+#, fuzzy
+#~| msgid ""
+#~| "Write the message for those who have already passed the poll under the "
+#~| "given conditions."
+#~ msgid "Write the message for those who aren’t included in the list."
+#~ msgstr ""
+#~ "Skriv meddelandet för dem som redan har klarat omröstningen under givna "
+#~ "villkor."
+
+#~ msgid "Password for passing Poll"
+#~ msgstr "Lösenord för att delta i omröstningen"
+
+#~ msgid "Choose a password for users to pass the poll."
+#~ msgstr "Välj ett lösenord för användare för att delta i omröstningen."
+
+#~ msgid "Password"
+#~ msgstr "Lösenord"
+
+#, fuzzy
+#~| msgid "Write your password"
+#~ msgid "Write your password."
+#~ msgstr "Skriv ditt lösenord"
+
+#~ msgid "Limitation count of takers"
+#~ msgstr "Begränsningsräkning av \"takers\""
+
+#~ msgid "You can choose how many users can pass the poll."
+#~ msgstr "Du kan välja hur många användare som får genomföra omröstningen."
+
+#~ msgid "The number of users who can pass the poll."
+#~ msgstr "Antalet användare som kan genomföra omröstningen."
+
+#~ msgid "Allow to vote once per session"
+#~ msgstr "Tillåt att rösta endast en gång per session"
+
+#~ msgid ""
+#~ "If you enable this feature, you can select the frequency the users can "
+#~ "have access to the poll after the first attempt. For example, if you give "
+#~ "a 1-day value to the session period, the user will have access to the "
+#~ "poll once in 1-day."
+#~ msgstr ""
+#~ "Om du aktiverar den här funktionen kan du välja den frekvens användarna "
+#~ "kan ha tillgång till omröstningen efter det första försöket. Om du till "
+#~ "exempel ger ett 1-dagarsvärde till sessionsperioden får användaren "
+#~ "tillgång till omröstningen en gång på 1-dag."
+
+#~ msgid "Session Period"
+#~ msgstr "Session Period"
+
+#~ msgid "Specify the time for one session."
+#~ msgstr "Ange tid för en session."
+
+#~ msgid ""
+#~ "Write the message, which will be shown during the restricted time, when "
+#~ "the user has already passed his/her limit for the session."
+#~ msgstr ""
+#~ "Skriv meddelandet, som kommer att visas under den begränsade tiden, när "
+#~ "användaren redan har passerat sin gräns för sessionen."
+
+#~ msgid "User Data Settings"
+#~ msgstr "Inställningar för användardata"
+
+#~ msgid "Information form title"
+#~ msgstr "Informationsformulärets rubrik"
+
+#~ msgid "Enable Information Form"
+#~ msgstr "Aktivera informationsformulär"
+
+#, fuzzy
+#~| msgid "Formfields"
+#~ msgid "Form Fields"
+#~ msgstr "Formfält"
+
+#~ msgid "Select which fields the user should fill out."
+#~ msgstr "Välj vilka fält användaren ska fylla i."
+
+#, fuzzy
+#~| msgid "Select required fields"
+#~ msgid "Required Fields"
+#~ msgstr "Välj obligatoriska fält"
+
+#~ msgid "Select which fields are required."
+#~ msgstr "Välj vilka fält som är obligatoriska."
+
+#~ msgid "Add custom fields"
+#~ msgstr "Lägga till anpassade fält"
+
+#~ msgid "For creating custom fields click "
+#~ msgstr "För att skapa anpassade fält klicka "
+
+#~ msgid "here"
+#~ msgstr "här"
+
+#~ msgid "Email settings"
+#~ msgstr "E-postinställningar"
+
+#, fuzzy
+#~| msgid "Results notification by e-mail"
+#~ msgid "Results notification by email"
+#~ msgstr "Resultat information via e-post"
+
+#, fuzzy
+#~| msgid ""
+#~| "If this option is on you will receive e-mail notification about votes."
+#~ msgid ""
+#~ "If the option is enabled, the admin(or your provided email) will receive "
+#~ "an email notification about votes at each time."
+#~ msgstr ""
+#~ "Om detta alternativ är aktiverat får du e-post meddelande om röstningar."
+
+#, fuzzy
+#~| msgid ""
+#~| "If you want set another e-mail, enter it here. Or leave blank for apply "
+#~| "admin e-mail."
+#~ msgid ""
+#~ "If you want to set another email, enter it here. Leave it blank for an "
+#~ "admin email."
+#~ msgstr ""
+#~ "Om du vill ha en annan e-post, ange det här. Eller lämna tomt för "
+#~ "tillämpa admin e-post."
+
+#~ msgid "Send Mail to User"
+#~ msgstr "Skicka e-post till användare"
+
+#~ msgid ""
+#~ "Send the message to the emails of the users after the submission of the "
+#~ "poll."
+#~ msgstr ""
+#~ "Skicka meddelandet till e-postmeddelandena för användarna efter "
+#~ "genomförandet av omröstningen."
+
+#, fuzzy
+#~| msgid "Integrations Settings"
+#~ msgid "Integrations settings"
+#~ msgstr "Inställningar för integreringar"
+
+#~ msgid "MailChimp Settings"
+#~ msgstr "MailChimp-inställningar"
+
+#, fuzzy, php-format
+#~| msgid "For enabling this option, please go to "
+#~ msgid "For enabling this option, please go to %s page and fill all options."
+#~ msgstr "För att aktivera detta alternativ, gå till "
+
+#~ msgid "this"
+#~ msgstr "denna"
+
+#~ msgid "Enable MailChimp"
+#~ msgstr "Aktivera MailChimp"
+
+#~ msgid "MailChimp list"
+#~ msgstr "MailChimp-lista"
+
+#~ msgid "Campaign Monitor Settings"
+#~ msgstr "Inställningar för kampanjövervakare"
+
+#~ msgid "Enable Campaign Monitor"
+#~ msgstr "Aktivera kampanjövervakaren"
+
+#~ msgid "Campaign Monitor list"
+#~ msgstr "Listan Kampanjövervakare"
+
+#~ msgid "Select List"
+#~ msgstr "Välj lista"
+
+#~ msgid "Zapier Integration Settings"
+#~ msgstr "Zapier Integrationsinställningar"
+
+#~ msgid "Enable Zapier Integration"
+#~ msgstr "Aktivera Zapier-integrering"
+
+#~ msgid "Send test data"
+#~ msgstr "Skicka testdata"
+
+#~ msgid ""
+#~ "We will send you a test data, and you can catch it in your ZAP for "
+#~ "configure it."
+#~ msgstr ""
+#~ "Vi kommer att skicka en testdata, och du kan fånga den i din ZAP för "
+#~ "konfigurera den."
+
+#, fuzzy
+#~| msgid "ActiveCampaign Settings"
+#~ msgid "Active Campaign Settings"
+#~ msgstr "ActiveCampaign-inställningar"
+
+#~ msgid "Enable ActiveCampaign"
+#~ msgstr "Aktivera ActiveCampaign"
+
+#~ msgid "ActiveCampaign list"
+#~ msgstr "ActiveCampaign-lista"
+
+#~ msgid "Just create contact"
+#~ msgstr "Skapa bara kontakt"
+
+#~ msgid "ActiveCampaign automation"
+#~ msgstr "ActiveCampaign-automatisering"
+
+#~ msgid "Slack Settings"
+#~ msgstr "Slack Inställningar"
+
+#~ msgid "Enable Slack integration"
+#~ msgstr "Aktivera Slack-integrering"
+
+#~ msgid "Slack conversation"
+#~ msgstr "Slack konversation"
+
+#~ msgid "Select Channel"
+#~ msgstr "Välj kanal"
+
+#~ msgid "Show answer percent"
+#~ msgstr "Visa svarsprocent"
+
+#, fuzzy
+#~| msgid ""
+#~| "Select the way of arrangement of the results on the finishing page of "
+#~| "the poll."
+#~ msgid ""
+#~ "Enable to show the percentage of each question on the progressbar on the "
+#~ "result page of the poll."
+#~ msgstr "Välj sätt att arrangera resultaten på sista sidan av omröstningen."
+
+#, fuzzy
+#~| msgid ""
+#~| "Select the way of arrangement of the results on the finishing page of "
+#~| "the poll."
+#~ msgid ""
+#~ "Disable to show voting results to the users on the result page of the "
+#~ "poll."
+#~ msgstr "Välj sätt att arrangera resultaten på sista sidan av omröstningen."
+
+#~ msgid "Message instead of results"
+#~ msgstr "Meddelande i stället för resultat"
+
+#, fuzzy
+#~| msgid ""
+#~| "Message that will appear instead of the voting results after the poll"
+#~ msgid ""
+#~ "Message that will appear instead of the votting results after the poll"
+#~ msgstr ""
+#~ "Meddelande som kommer att visas i stället för omröstningsresultaten efter "
+#~ "omröstningen"
+
+#~ msgid "Result Message"
+#~ msgstr "Resultatmeddelande"
+
+#, fuzzy
+#~| msgid ""
+#~| "Write the message, which will be shown during the restricted time, when "
+#~| "the user has already passed his/her limit for the session."
+#~ msgid ""
+#~ "Write the message, which will be shown on the result page of the poll."
+#~ msgstr ""
+#~ "Skriv meddelandet, som kommer att visas under den begränsade tiden, när "
+#~ "användaren redan har passerat sin gräns för sessionen."
+
+#, fuzzy
+#~| msgid "Thanks for your answer!"
+#~ msgid "Thank you!"
+#~ msgstr "Tack för ditt svar!"
+
+#~ msgid "Results sorting"
+#~ msgstr "Resultat sortering"
+
+#, fuzzy
+#~| msgid ""
+#~| "Select the way of arrangement of the results on the finishing page of "
+#~| "the poll."
+#~ msgid ""
+#~ "Select the way of arrangement of the results on the result page of the "
+#~ "poll."
+#~ msgstr "Välj sätt att arrangera resultaten på sista sidan av omröstningen."
+
+#~ msgid "Ascending – the smallest to largest"
+#~ msgstr "Stigande – den minsta till det största"
+
+#~ msgid "Descending – the largest to smallest"
+#~ msgstr "Fallande – den största till den minsta"
+
+#~ msgid "Show votes count"
+#~ msgstr "Visa antal röster"
+
+#~ msgid "Loading effect"
+#~ msgstr "Inläsningseffekt"
+
+#, fuzzy
+#~| msgid "Loading effect before displaying poll results."
+#~ msgid "Choose the loading effect of the displaying poll results."
+#~ msgstr "Inläsningseffekt innan omröstningsresultat visas."
+
+#~ msgid "Loading GIF"
+#~ msgstr "Läsa in GIF"
+
+#~ msgid "Opacity"
+#~ msgstr "Opacitet"
+
+#~ msgid "Blur"
+#~ msgstr "Suddighet"
+
+#~ msgid "Custom GIF"
+#~ msgstr "Anpassad GIF"
+
+#~ msgid "Enable restart button"
+#~ msgstr "Aktivera omstartsknapp"
+
+#~ msgid "Social share buttons"
+#~ msgstr "Sociala delningsknappar"
+
+#~ msgid "Results bar in RGBA"
+#~ msgstr "Resultat stapel i RGBA"
+
+#, fuzzy
+#~| msgid ""
+#~| "The opacity of the result bar color will depend on the number of votes. "
+#~| "Not work for 'Coffee Fluid' theme choosing list view poll."
+#~ msgid ""
+#~ "If the option is enabled, the opacity of the result bar color will depend "
+#~ "on the number of votes."
+#~ msgstr ""
+#~ "Resultatlistfärgens opacitet beror på antalet röster. Fungerar inte för "
+#~ "\"Coffee Fluid\" tema när man väljer lista för att visa omröstning."
+
+#~ msgid "Users count"
+#~ msgstr "Antal användare"
+
+#, fuzzy
+#~| msgid "Redirect delay (sec)"
+#~ msgid "Option Redirect Delay"
+#~ msgstr "Omdirigera fördröjning i (sek)"
+
+#~ msgid "Show results by"
+#~ msgstr "Visa resultat efter"
+
+#, fuzzy
+#~| msgid ""
+#~| "Select the way of arrangement of the results on the finishing page of "
+#~| "the poll."
+#~ msgid ""
+#~ "Select the way of displaying the results on the result page of the poll."
+#~ msgstr "Välj sätt att arrangera resultaten på sista sidan av omröstningen."
+
+#, fuzzy
+#~| msgid "Poll chart"
+#~ msgid "Bar chart"
+#~ msgstr "Diagram över omröstning"
+
+#, fuzzy
+#~| msgid "Show results by"
+#~ msgid "Show Results by"
+#~ msgstr "Visa resultat efter"
+
+#~ msgid "Pie Chart"
+#~ msgstr "Cirkeldiagram"
+
+#, fuzzy
+#~| msgid "Message instead of results"
+#~ msgid "Results Message Based on the Answer"
+#~ msgstr "Meddelande i stället för resultat"
+
+#~ msgid "Show Answer message"
+#~ msgstr "Visa Svars-meddelande"
+
+#~ msgid "Text"
+#~ msgstr "Text"
+
+#~ msgid "Answer 1"
+#~ msgstr "Svar 1"
+
+#~ msgid "Answer 2"
+#~ msgstr "Svar 2"
+
+#, fuzzy
+#~| msgid "Default parameters for Poll"
+#~ msgid "Save as Default feature of Poll"
+#~ msgstr "Standardparametrar för Omröstning"
+
+#~ msgid "Choosing"
+#~ msgstr "Välja"
+
+#~ msgid "Rating"
+#~ msgstr "Betyg"
+
+#~ msgid "Voting"
+#~ msgstr "Röstning"
+
+#~ msgid "Versus"
+#~ msgstr "Kontra"
+
+#~ msgid "Statistics"
+#~ msgstr "Statistik"
+
+#, fuzzy
+#~| msgid "Export to"
+#~ msgid "Export Results"
+#~ msgstr "Exportera till CSV"
+
+#~ msgid "Export"
+#~ msgstr "Exportera"
+
+#~ msgid "Changes saved."
+#~ msgstr "Ändringar sparade."
+
+#~ msgid "Poll attribute ."
+#~ msgstr "Omröstning-attribut ."
+
+#~ msgid "Poll attribute deleted."
+#~ msgstr "Omröstning - attribut borttaget."
+
+#~ msgid "Shortcodes"
+#~ msgstr "Shortcodes"
+
+#~ msgid "Default parameters for Poll"
+#~ msgstr "Standardparametrar för Omröstning"
+
+#~ msgid "Disable IP Storing"
+#~ msgstr "Inaktivera IP-lagring"
+
+#, fuzzy
+#~| msgid ""
+#~| "After enabling this option, IP address of the users will not be stored "
+#~| "in database.  Note: If this option is enabled, then the Limit users to "
+#~| "rate only once option will not work."
+#~ msgid ""
+#~ "After enabling this option, the IP address of the users will not be "
+#~ "stored in the database.  Note: If this option is enabled, then the "
+#~ "Limitation options connected with IP will not work."
+#~ msgstr ""
+#~ "Efter att ha aktiverat det här alternativet kommer INTE IP-adressen för "
+#~ "användarna att lagras i databasen. OBS: Om den här valen är aktiverat, då "
+#~ "fungerar inte alternativet: Användare får endast rösta en gång."
+
+#, fuzzy
+#~| msgid "Answer Datetime"
+#~ msgid "Answer Default Count"
+#~ msgstr "Datum för svar"
+
+#~ msgid "Poll answers sound"
+#~ msgstr "Omröstning - ljud vid svar"
+
+#~ msgid "Sound for answers"
+#~ msgstr "Ljud för svar"
+
+#~ msgid "Select sound"
+#~ msgstr "Välj ljud"
+
+#, fuzzy
+#~| msgid "Poll Title"
+#~ msgid "Polls list table"
+#~ msgstr "Titel Fråga"
+
+#, fuzzy
+#~| msgid "Results per poll"
+#~ msgid "Results up to a"
+#~ msgstr "Resultat per fråga"
+
+#, fuzzy
+#~| msgid "You not have permissions for voting."
+#~ msgid "Who will have permission to Poll menu"
+#~ msgstr "Du har inte behörighet för att röstning."
+
+#~ msgid "Select user role"
+#~ msgstr "Välj användarroll"
+
+#, fuzzy
+#~| msgid "Ability to manage Poll Maker plugin for selected user roles."
+#~ msgid "Ability to manage Poll Maker plugin only for selected user roles."
+#~ msgstr "Möjlighet att hantera Poll Maker plugin för utvalda användarroller."
+
+#~ msgid "MailChimp"
+#~ msgstr "MailChimp (för eget nyhetsbrev)"
+
+#~ msgid "MailChimp Username"
+#~ msgstr "Användarnamn för MailChimp"
+
+#~ msgid "MailChimp API Key"
+#~ msgstr "MailChimp API-nyckel"
+
+#~ msgid "You can get your API key from your "
+#~ msgstr "Du kan få din API-nyckel från din "
+
+#~ msgid "Campaign Monitor"
+#~ msgstr "Campaign Monitor"
+
+#~ msgid "Client ID"
+#~ msgstr "Klient ID"
+
+#~ msgid "API Key"
+#~ msgstr "API-nyckel"
+
+#~ msgid ""
+#~ "You can get your API key and Client ID from your Account Settings page"
+#~ msgstr ""
+#~ "Du kan hämta DIN API-nyckel och Klient-ID från sidan Kontoinställningar"
+
+#~ msgid "Zapier"
+#~ msgstr "Zapier"
+
+#~ msgid "Zapier Webhook URL"
+#~ msgstr "Zapier Webhook URL"
+
+#, fuzzy, php-format
+#~| msgid ""
+#~| "If you do not have any ZAP created, go <a href='%s' target='_blank'>%s</"
+#~| "a>. Remember to choose Webhooks by Zapier as Trigger App."
+#~ msgid ""
+#~ "If you do not have any ZAP created, go <a href='%s' target='_blank'>here</"
+#~ "a>. Remember to choose Webhooks by Zapier as Trigger App."
+#~ msgstr ""
+#~ "Om du inte har någon ZAP skapat, gå <a href='%s' target='_blank'>%s</a>. "
+#~ "Kom ihåg att välja Webhooks av Zapier som Trigger App."
+
+#~ msgid ""
+#~ "We will send you all data from poll information form with \"AysPoll\" key "
+#~ "by POST method"
+#~ msgstr ""
+#~ "Vi skickar alla data från omröstningens informationsformulär med "
+#~ "\"AysPoll\" nyckel genom POST metod"
+
+#~ msgid "ActiveCampaign"
+#~ msgstr "ActiveCampaign"
+
+#~ msgid "API Access URL"
+#~ msgstr "URL för API-åtkomst"
+
+#~ msgid "API Access Key"
+#~ msgstr "Åtkomstnyckel för API"
+
+#~ msgid ""
+#~ "Your API URL and Key can be found in your account on the My Settings page "
+#~ "under the \"Developer\" tab"
+#~ msgstr ""
+#~ "Din API-URL och nyckel finns i ditt konto på sidan Mina inställningar "
+#~ "under fliken \"Utvecklare\""
+
+#~ msgid "Slack"
+#~ msgstr "Slack"
+
+#~ msgid "Slack Integration Setup Instructions"
+#~ msgstr "Anvisningar för slack-integreringsinställningar"
+
+#~ msgid "Instructions"
+#~ msgstr "Instruktioner"
+
+#~ msgid "App Client ID"
+#~ msgstr "Klient-ID för appar"
+
+#~ msgid "Slack Authorization"
+#~ msgstr "Slack auktorisering"
+
+#~ msgid "Authorized"
+#~ msgstr "Auktoriserad"
+
+#~ msgid "App Client Secret"
+#~ msgstr "App klient-lösen"
+
+#~ msgid "App Access Token"
+#~ msgstr "Appåtkomst token"
+
+#~ msgid "Need Authorization"
+#~ msgstr "Behöver Auktorisering"
+
+#~ msgid ""
+#~ "You can get your App Client ID and Client Secret from your App's the "
+#~ "Basic Information page"
+#~ msgstr ""
+#~ "Du kan få ditt App Client ID och Client Secret från din App- sidan "
+#~ "Grundläggande information"
+
+#, fuzzy
+#~| msgid "You can get your API key from your "
+#~ msgid ""
+#~ "You can get your API key from your <a href='#' target='_blank'>account</"
+#~ "a>."
+#~ msgstr "Du kan få din API-nyckel från din "
+
+#~ msgid "Shortcode for all polls"
+#~ msgstr "Shortcode för alla omröstningar"
+
+#, fuzzy
+#~| msgid "Shortcode for all polls"
+#~ msgid "Shortcode for all polls "
+#~ msgstr "Shortcode för alla omröstningar"
+
+#, fuzzy, php-format
+#~| msgid "Unpublished"
+#~ msgid "%1$spublished%2$s"
+#~ msgstr "Ej publiserad"
+
+#~ msgid "Shortcode result by ID"
+#~ msgstr "Shortkode resultat efter ID"
+
+#, fuzzy
+#~| msgid "Shortcode result by ID"
+#~ msgid "Shortcode result by ID "
+#~ msgstr "Shortkode resultat efter ID"
+
+#, fuzzy
+#~| msgid "Pie Chart"
+#~ msgid "Bar Chart"
+#~ msgstr "Cirkeldiagram"
+
+#~ msgid "Shortcode"
+#~ msgstr "Shortcode"
+
+#~ msgid "Poll Categories"
+#~ msgstr "Omröstnings kategorier"
+
+#~ msgid "Poll category shortcode"
+#~ msgstr "Omröstning - kategori shortcode"
+
+#~ msgid ""
+#~ "Copy the following shortcode, configure it based on your preferences and "
+#~ "paste it into the post. Put the shortcode of your preferred category,  "
+#~ "choose the method of displaying (all/random), and the design of the "
+#~ "layout(list/grid). If you set the method as All, it will show all polls "
+#~ "from the given category, if you set the method as Random, please give a "
+#~ "value to count option too, and it will randomly display that given amount "
+#~ "of polls from the given category."
+#~ msgstr ""
+#~ "Kopiera följande shortcode, konfigurera den baserat på dina önskemål och "
+#~ "klistra in den i inlägget. Sätt shortcode för din föredragna kategori, "
+#~ "välj metod för visning (alla / slumpmässiga), och utformningen av "
+#~ "layouten(lista / rutnät). Om du ställer in metoden som Alla, kommer det "
+#~ "att visa alla omröstningar från den givna kategorin, om du ställer in "
+#~ "metoden som Random, vänligen ge ett värde att räkna alternativet för, och "
+#~ "det kommer slumpmässigt visa att givet belopp av omröstningar från den "
+#~ "givna kategorin."
+
+#~ msgid "Global Leaderboard Settings"
+#~ msgstr "Inställningar för global topplista"
+
+#, fuzzy
+#~| msgid ""
+#~| "You can copy the shortcode and paste it to any post/page to see the list "
+#~| "of the top user’s who passed any poll."
+#~ msgid ""
+#~ "Paste the shortcode into any of your posts to show the list of the top "
+#~ "users who have passed your polls."
+#~ msgstr ""
+#~ "Du kan kopiera shortcode och klistra in den till alla inlägg / sida för "
+#~ "att se listan över den översta användarens som klarat någon omröstning."
+
+#~ msgid "Global Leaderboard shortcode"
+#~ msgstr "Global Leaderboard shortcode"
+
+#~ msgid ""
+#~ "You can copy the shortcode and paste it to any post/page to see the list "
+#~ "of the top user’s who passed any poll."
+#~ msgstr ""
+#~ "Du kan kopiera shortcode och klistra in den till alla inlägg / sida för "
+#~ "att se listan över den översta användarens som klarat någon omröstning."
+
+#~ msgid "How many users’ results will be shown in the leaderboard."
+#~ msgstr "Hur många användarresultat kommer att visas i leaderboarden."
+
+#, fuzzy, no-php-format
+#~ msgid ""
+#~ "The width of the Leaderboard box. It accepts only numeric values. For "
+#~ "100% leave it blank."
+#~ msgstr ""
+#~ "The width of the Leaderboard box. It accepts only numeric values. For "
+#~ "100% leave it blank."
+
+#~ msgid "Users group by"
+#~ msgstr "Användare grupperas efter"
+
+#, fuzzy
+#~ msgid ""
+#~ "Select the way for grouping the results. If you want to make Leaderboard "
+#~ "for logged in users, then choose ID. It will collect results by WP user "
+#~ "ID. If you want to make Leaderboard for guests, then you need to choose "
+#~ "Email and enable Information Form and Email, Name options from poll "
+#~ "settings. It will group results by emails and display guests Names."
+#~ msgstr ""
+#~ "Välj sätt för gruppering av resultaten. Om du vill göra Leaderboard för "
+#~ "inloggade användare, välj sedan ID. Det kommer att samla in resultat av "
+#~ "WP användar-ID. Om du vill göra Leaderboard för gäster, då måste du välja "
+#~ "E-post och aktivera Information Form och E-post, Namn alternativ från "
+#~ "omröstning inställningar. Det kommer att gruppera resultat genom e-post "
+#~ "och visa gäster Namn."
+
+#~ msgid "ID"
+#~ msgstr "ID"
+
+#~ msgid "Top color of the leaderboard"
+#~ msgstr "Toppfärg på topplistan"
+
+#~ msgid "Field for entering your own CSS code"
+#~ msgstr "Fält för att ange din egen CSS-kod"
+
+#, fuzzy
+#~| msgid "Results sorting"
+#~ msgid "All Results Settings"
+#~ msgstr "Resultat sortering"
+
+#, fuzzy
+#~| msgid ""
+#~| "You can copy the shortcode and paste it to any post/page to see the list "
+#~| "of the top user’s who passed any poll."
+#~ msgid ""
+#~ "You can copy the shortcode and insert it to any post to show all results."
+#~ msgstr ""
+#~ "Du kan kopiera shortcode och klistra in den till alla inlägg / sida för "
+#~ "att se listan över den översta användarens som klarat någon omröstning."
+
+#, fuzzy
+#~| msgid "Show result button"
+#~ msgid "Show to guests too"
+#~ msgstr "Knappen Visa resultat"
+
+#, fuzzy
+#~| msgid "The categories of the poll"
+#~ msgid "The title of the poll."
+#~ msgstr "Kategorierna i omröstningen"
+
+#~ msgid "Save changes"
+#~ msgstr "Spara ändringar"
+
+#, fuzzy
+#~| msgid "Poll Maker"
+#~ msgid "Poll Maker Logo"
+#~ msgstr "Poll Maker"
+
+#, fuzzy
+#~| msgid "Poll Maker"
+#~ msgid "Welcome to Poll Maker"
+#~ msgstr "Poll Maker"
+
+#, fuzzy
+#~| msgid "Create post for poll"
+#~ msgid "Create Your First Poll"
+#~ msgstr "Skapa inlägg för omröstning"
+
+#~ msgid "Category"
+#~ msgstr "Kategori"
+
+#~ msgid "Edit"
+#~ msgstr "Redigera"
+
+#~ msgid "Poll category created."
+#~ msgstr "Omröstning - kategori skapad."
+
+#~ msgid "Poll category saved."
+#~ msgstr "Omröstning - kategori sparad."
+
+#~ msgid "Poll category deleted."
+#~ msgstr "Omröstning - kategori borttagen."
+
+#, fuzzy
+#~| msgid "Show results by"
+#~ msgid "Each result"
+#~ msgstr "Visa resultat efter"
+
+#, fuzzy
+#~| msgid "Hide results"
+#~ msgid "Each results"
+#~ msgstr "Dölj resultat"
+
+#~ msgid "Guest"
+#~ msgstr "Gäst"
+
+#~ msgid "WP User"
+#~ msgstr "WP-användare"
+
+#~ msgid "Vote Datetime"
+#~ msgstr "Datum för omröstning"
+
+#~ msgid "Read Status"
+#~ msgstr "Läs status"
+
+#, fuzzy
+#~| msgid "Result(s) deleted."
+#~ msgid "Result(s) deleted."
+#~ msgstr "Resultat borttaget."
+
+#, fuzzy
+#~| msgid "Select Poll"
+#~ msgid "Select Author"
+#~ msgstr "Välj Omröstning"
+
+#, fuzzy
+#~| msgid "Select Channel"
+#~ msgid "Select Type"
+#~ msgstr "Välj kanal"
+
+#, fuzzy
+#~| msgid "Clear"
+#~ msgid "Clear filters"
+#~ msgstr "Rensa"
+
+#~ msgid "Duplicate"
+#~ msgstr "Duplicera"
+
+#, fuzzy
+#~| msgid "See Results"
+#~ msgid "View Results"
+#~ msgstr "Se resultat"
+
+#~ msgid "Type"
+#~ msgstr "Typ"
+
+#~ msgid "Code Include"
+#~ msgstr "Inkludera shortcode"
+
+#~ msgid "Created"
+#~ msgstr "Skapad"
+
+#~ msgid "Completed count"
+#~ msgstr "Antal avslutade"
+
+#~ msgid "Poll created."
+#~ msgstr "Omröstning skapad."
+
+#~ msgid "Poll saved."
+#~ msgstr "Omröstning sparad."
+
+#, fuzzy
+#~| msgid "Poll created."
+#~ msgid "Poll duplicated."
+#~ msgstr "Omröstning skapad."
+
+#, fuzzy
+#~| msgid "Poll(s) deleted."
+#~ msgid "Poll deleted."
+#~ msgstr "Omröstning (ar) borttagen."
+
+#~ msgid "Result"
+#~ msgstr "Resultat"
+
+#, fuzzy
+#~| msgid "Users count"
+#~ msgid "Voters count"
+#~ msgstr "Antal användare"
+
+#, fuzzy
+#~| msgid "Users count"
+#~ msgid "New results count"
+#~ msgstr "Antal användare"
+
+#, fuzzy
+#~| msgid "Result(s) deleted."
+#~ msgid "Result deleted."
+#~ msgstr "Resultat borttaget."
+
+#, fuzzy
+#~| msgid "Export Filter"
+#~ msgid "Filter"
+#~ msgstr "Exportera filter"
+
+#~ msgid "Enter the poll title"
+#~ msgstr "Ange rubrik för omröstning"
+
+#~ msgid "Title Alignment"
+#~ msgstr "Rubrikjustering"
+
+#, fuzzy
+#~| msgid "Minute(s)"
+#~ msgid "minute"
+#~ msgstr "Minut(er)"
+
+#, fuzzy
+#~| msgid "Thanks for your answer!"
+#~ msgid "Thanks for your answer"
+#~ msgstr "Tack för ditt svar!"
+
+#, fuzzy
+#~| msgid "You will be redirected "
+#~ msgid "You will be redirected"
+#~ msgstr "Du kommer att omdirigeras "
+
+#, fuzzy
+#~| msgid "This Poll active until "
+#~ msgid "This Poll is active until "
+#~ msgstr "Denna omröstning är aktiv tills "
+
+#~ msgid "This Poll will start "
+#~ msgstr "Denna omröstning kommer att starta "
+
+#~ msgid "Created on"
+#~ msgstr "Skapad den"
+
+#~ msgid "By"
+#~ msgstr "Av"
+
+#~ msgid "Created by"
+#~ msgstr "Skapat av"
+
+#~ msgid "You must sign in for voting."
+#~ msgstr "Du måste logga in för att röstning."
+
+#~ msgid "You not have permissions for voting."
+#~ msgstr "Du har inte behörighet för att röstning."
+
+#, fuzzy
+#~| msgid "View Post"
+#~ msgid "View more"
+#~ msgstr "Visa inlägg"
+
+#~ msgid "Send"
+#~ msgstr "Skicka"
+
+#~ msgid "You have already voted."
+#~ msgstr "Du har redan röstat."
+
+#~ msgid "Redirecting after"
+#~ msgstr "Omdirigering efter"
+
+#~ msgid "The poll will be available soon."
+#~ msgstr "Denna omröstning öppnas snart."
+
+#~ msgid "The poll has expired."
+#~ msgstr "Denna omröstning är slutförd."
+
+#~ msgid "Next"
+#~ msgstr "Nästa"
+
+#, fuzzy
+#~| msgid "Edit poll"
+#~ msgid "edit poll page"
+#~ msgstr "Redigera omröstning"
+
+#~ msgid "page and fill all options."
+#~ msgstr "sidan och alla ifyllnads alternativ."
+
+#, fuzzy
+#~| msgid "Poll Maker"
+#~ msgid "Poll Maker plugin!"
+#~ msgstr "Poll Maker"
+
+#~ msgid "Add answer"
+#~ msgstr "Lägg till svar"
+
+#~ msgid "Redirect"
+#~ msgstr "Omdirigera"
+
+#, fuzzy
+#~| msgid "Answer 1"
+#~ msgid "Answer "
+#~ msgstr "Svar 1"
+
+#, fuzzy
+#~| msgid "Poll"
+#~ msgid "Poll ID"
+#~ msgstr "Enkät"
+
+#~ msgid "Save Category"
+#~ msgstr "Spara kategori"
+
+#~ msgid "Apply Category"
+#~ msgstr "Tillämpa kategori"

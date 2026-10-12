@@ -1,0 +1,790 @@
+<?php
+
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+}
+
+/**
+ * Additional hooks for "Permalink Manager Pro"
+ */
+class Permalink_Manager_Actions {
+
+	public function __construct() {
+		add_action( 'admin_init', array( $this, 'trigger_action' ), 9 );
+		add_action( 'admin_init', array( $this, 'extra_actions' ) );
+
+		// Ajax-based functions
+		if ( is_admin() ) {
+			add_action( 'wp_ajax_pm_bulk_tools', array( $this, 'ajax_bulk_tools' ) );
+			add_action( 'wp_ajax_pm_save_permalink', array( $this, 'ajax_save_permalink' ) );
+			add_action( 'wp_ajax_pm_detect_duplicates', array( $this, 'ajax_detect_duplicates' ) );
+			add_action( 'wp_ajax_pm_dismissed_notice_handler', array( $this, 'ajax_hide_global_notice' ) );
+		}
+	}
+
+	/**
+	 * Route the requests to functions that save datasets with associated callbacks
+	 */
+	public function trigger_action() {
+		global $permalink_manager_after_sections_html;
+
+		// 1. Check if the form was submitted
+		if ( empty( $_POST ) ) {
+			return;
+		}
+
+		// 2. Do nothing if search query is not empty
+		if ( isset( $_POST['uri_editor_nonce'] ) && ( isset( $_REQUEST['search-submit'] ) || isset( $_REQUEST['filter-button'] ) ) ) {
+			$this->trigger_filter_action();
+		}
+
+		$actions_map = array(
+			'uri_editor_nonce'               => array( 'function' => 'update_all_permalinks', 'display_uri_table' => true ),
+			'permalink_manager_options'      => array( 'function' => 'save_settings' ),
+			'permalink_manager_permastructs' => array( 'function' => 'save_permastructures' ),
+			'import'                         => array( 'function' => 'import_custom_permalinks_uris' ),
+		);
+
+		// 3. Find the action
+		foreach ( $actions_map as $action => $map ) {
+			$nonce = ( isset( $_POST[ $action ] ) ) ? sanitize_key( $_POST[ $action ] ) : '';
+
+			if ( ! empty( $nonce ) && wp_verify_nonce( $nonce, 'permalink-manager' ) ) {
+				// Execute the function
+				$output = call_user_func( array( $this, $map['function'] ) );
+
+				// Get list of updated URIs
+				if ( ! empty( $map['display_uri_table'] ) ) {
+					$updated_slugs_count = ( isset( $output['updated_count'] ) && $output['updated_count'] > 0 ) ? $output['updated_count'] : false;
+					$updated_slugs_array = ( $updated_slugs_count ) ? $output['updated'] : '';
+				}
+
+				// Trigger only one function
+				break;
+			}
+		}
+
+		// 4. Display the slugs table (and append the globals)
+		if ( isset( $updated_slugs_count ) && isset( $updated_slugs_array ) ) {
+			$permalink_manager_after_sections_html .= Permalink_Manager_UI_Elements::display_updated_slugs( $updated_slugs_array );
+		}
+	}
+
+	/**
+	 * Adjust the Bulk URI Editor filter URL
+	 *
+	 * @return void
+	 */
+	public function trigger_filter_action() {
+		if ( empty( $_POST['uri_editor_nonce'] ) || ! wp_verify_nonce( sanitize_key( $_POST['uri_editor_nonce'] ), 'permalink-manager' ) ) {
+			return;
+		}
+
+		$query_args = array(
+			'langcode' => ! empty( $_REQUEST['langcode'] ) ? sanitize_key( $_REQUEST['langcode'] ) : null,
+			'month'    => ! empty( $_REQUEST['month'] ) ? sanitize_key( $_REQUEST['month'] ) : null,
+			's'        => ! empty( $_REQUEST['s'] ) ? sanitize_text_field( wp_unslash( $_REQUEST['s'] ) ) : null,
+		);
+
+		if ( ! empty( $query_args ) ) {
+			$sendback = remove_query_arg( array_keys( $query_args ), wp_get_referer() );
+			$sendback = add_query_arg( array_filter( $query_args ), $sendback );
+
+			wp_safe_redirect( $sendback );
+			exit;
+		}
+	}
+
+	/**
+	 * Route the requests to the additional tools-related functions with the relevant callbacks
+	 */
+	public static function extra_actions() {
+		global $permalink_manager_before_sections_html;
+
+		if ( current_user_can( 'manage_options' ) && ! empty( $_GET['permalink-manager-nonce'] ) ) {
+			// Check if the nonce field is correct
+			$nonce = sanitize_key( $_GET['permalink-manager-nonce'] );
+
+			if ( ! wp_verify_nonce( $nonce, 'permalink-manager' ) ) {
+				$permalink_manager_before_sections_html = Permalink_Manager_UI_Elements::get_alert_message( __( 'You are not allowed to remove Permalink Manager data!', 'permalink-manager' ), 'error updated_slugs' );
+
+				return;
+			}
+
+			if ( isset( $_GET['clear-permalink-manager-uris'] ) ) {
+				self::clear_all_uris();
+			} else if ( isset( $_GET['remove-permalink-manager-settings'] ) ) {
+				$option_name = sanitize_key( $_GET['remove-permalink-manager-settings'] );
+				self::remove_plugin_data( $option_name );
+			} else if ( ! empty( $_REQUEST['remove-uri'] ) ) {
+				$uri_key = sanitize_key( $_REQUEST['remove-uri'] );
+				self::force_clear_single_element_uris_and_redirects( $uri_key );
+			} else if ( ! empty( $_REQUEST['remove-redirect'] ) ) {
+				$redirect_key = sanitize_key( $_REQUEST['remove-redirect'] );
+				self::force_clear_single_redirect( $redirect_key );
+			}
+		} else if ( ! empty( $_POST['screen-options-apply'] ) ) {
+			self::save_screen_options();
+		}
+	}
+
+	/**
+	 * Bulk remove obsolete custom permalinks and redirects
+	 */
+	public static function clear_all_uris() {
+		global $permalink_manager_redirects, $permalink_manager_before_sections_html;
+
+		// Get all custom permalinks & redirects
+		$custom_permalinks = Permalink_Manager_URI_Functions::get_all_uris();
+		$custom_redirects  = (array) $permalink_manager_redirects;
+
+		// Check if array with custom URIs exists
+		if ( empty( $custom_permalinks ) ) {
+			return;
+		}
+
+		// Count removed URIs & redirects
+		$removed_uris      = 0;
+		$removed_redirects = 0;
+
+		// Get all element IDs
+		$element_ids = array_merge( array_keys( $custom_permalinks ), array_keys( $custom_redirects ) );
+
+		// 1. Remove unused custom URI & redirects for deleted post or term
+		foreach ( $element_ids as $element_id ) {
+			$count = self::clear_single_element_uris_and_redirects( $element_id, true );
+
+			$removed_uris      = ( ! empty( $count[0] ) ) ? $count[0] + $removed_uris : $removed_uris;
+			$removed_redirects = ( ! empty( $count[1] ) ) ? $count[1] + $removed_redirects : $removed_redirects;
+		}
+
+		// 2. Keep only a single redirect
+		$removed_redirects += self::clear_redirects_array();
+
+		// 3. Save cleared URIs & Redirects
+		if ( $removed_uris > 0 || $removed_redirects > 0 ) {
+			Permalink_Manager_URI_Functions::save_all_uris();
+			update_option( 'permalink-manager-redirects', array_filter( $permalink_manager_redirects ) );
+
+			// Translators: 1: Number of custom URIs, 2: Number of custom redirects.
+			$permalink_manager_before_sections_html .= Permalink_Manager_UI_Elements::get_alert_message( sprintf( __( '%1$d Custom URIs and %2$d Custom Redirects were removed!', 'permalink-manager' ), $removed_uris, $removed_redirects ), 'updated updated_slugs' );
+		} else {
+			$permalink_manager_before_sections_html .= Permalink_Manager_UI_Elements::get_alert_message( __( 'No Custom URIs or Custom Redirects were removed!', 'permalink-manager' ), 'error updated_slugs' );
+		}
+	}
+
+	/**
+	 * Remove obsolete custom permalink & redirects for specific post or term
+	 *
+	 * @param string|int $element_id
+	 * @param bool $count_removed
+	 *
+	 * @return array
+	 */
+	public static function clear_single_element_uris_and_redirects( $element_id, $count_removed = false ) {
+		global $wpdb, $permalink_manager_redirects, $permalink_manager_options;
+
+		// Count removed URIs & redirects
+		$removed_uris      = 0;
+		$removed_redirects = 0;
+
+		// Only admin users can remove the broken URIs for removed post types & taxonomies
+		$check_if_admin = is_admin();
+
+		// Check if the advanced mode is turned on
+		$advanced_mode = Permalink_Manager_Helper_Functions::is_advanced_mode_on();
+
+		// If "Disable URI Editor to disallow Permalink changes" is set globally, the pages that follow the global settings should also be removed
+		if ( $advanced_mode && ! empty( $permalink_manager_options["general"]["auto_update_uris"] ) && $permalink_manager_options["general"]["auto_update_uris"] == 2 ) {
+			$strict_mode = true;
+		} else {
+			$strict_mode = false;
+		}
+
+		// 1. Check if element exists
+		// phpcs:disable WordPress.DB.DirectDatabaseQuery.DirectQuery, WordPress.DB.DirectDatabaseQuery.NoCaching -- Direct SQL query is needed to join multiple tables
+		if ( strpos( $element_id, 'tax-' ) !== false ) {
+			$term_id   = preg_replace( "/[^0-9]/", "", $element_id );
+			$term_info = $wpdb->get_row( $wpdb->prepare( "SELECT taxonomy, meta_value FROM {$wpdb->term_taxonomy} AS t LEFT JOIN {$wpdb->termmeta} AS tm ON tm.term_id = t.term_id AND tm.meta_key = 'auto_update_uri' WHERE t.term_id = %d", $term_id ) );
+
+			// Custom URIs for disabled taxonomies may only be deleted via the admin dashboard, although they will always be removed if the term no longer exists in the database
+			$remove = ( ! empty( $term_info->taxonomy ) ) ? Permalink_Manager_Helper_Functions::is_taxonomy_disabled( $term_info->taxonomy, $check_if_admin ) : true;
+
+			// Remove custom URIs for URIs disabled in URI Editor
+			if ( $strict_mode ) {
+				$remove = ( empty( $term_info->meta_value ) || $term_info->meta_value == 2 ) ? true : $remove;
+			} else {
+				$remove = ( ! empty( $term_info->meta_value ) && $term_info->meta_value == 2 ) ? true : $remove;
+			}
+		} else if ( is_numeric( $element_id ) ) {
+			$post_info = $wpdb->get_row( $wpdb->prepare( "SELECT post_type, meta_value FROM {$wpdb->posts} AS p LEFT JOIN {$wpdb->postmeta} AS pm ON pm.post_ID = p.ID AND pm.meta_key = 'auto_update_uri' WHERE ID = %d AND post_status NOT IN ('auto-draft', 'trash') AND post_type != 'nav_menu_item'", $element_id ) );
+
+			// Custom URIs for disabled post types may only be deleted via the admin dashboard, although they will always be removed if the post no longer exists in the database
+			$remove = ( ! empty( $post_info->post_type ) ) ? Permalink_Manager_Helper_Functions::is_post_type_disabled( $post_info->post_type, $check_if_admin ) : true;
+
+			// Remove custom URIs for URIs disabled in URI Editor
+			if ( $strict_mode ) {
+				$remove = ( empty( $post_info->meta_value ) || $post_info->meta_value == 2 ) ? true : $remove;
+			} else {
+				$remove = ( ! empty( $post_info->meta_value ) && $post_info->meta_value == 2 ) ? true : $remove;
+			}
+
+			// Remove custom URIs for attachments redirected with Yoast's SEO Premium
+			$yoast_permalink_options = ( class_exists( 'WPSEO_Premium' ) ) ? get_option( 'wpseo_permalinks' ) : array();
+
+			if ( ! empty( $yoast_permalink_options['redirectattachment'] ) && $post_info->post_type == 'attachment' ) {
+				$attachment_parent = $wpdb->get_var( $wpdb->prepare( "SELECT post_parent FROM {$wpdb->prefix}posts WHERE ID = %d AND post_type = %s", $element_id, 'attachment' ) );
+				if ( ! empty( $attachment_parent ) ) {
+					$remove = true;
+				}
+			}
+		}
+		// phpcs:enable WordPress.DB.DirectDatabaseQuery.DirectQuery, WordPress.DB.DirectDatabaseQuery.NoCaching
+
+		// 2A. Remove ALL unused custom permalinks & redirects
+		if ( ! empty( $remove ) ) {
+			$current_uri = Permalink_Manager_URI_Functions::get_single_uri( $element_id, false, true, null );
+
+			// Remove URI
+			if ( ! empty( $current_uri ) ) {
+				$removed_uris = 1;
+				Permalink_Manager_URI_Functions::remove_single_uri( $element_id, null, false );
+			}
+
+			// Remove all custom redirects
+			if ( ! empty( $permalink_manager_redirects[ $element_id ] ) && is_array( $permalink_manager_redirects[ $element_id ] ) ) {
+				$removed_redirects = count( $permalink_manager_redirects[ $element_id ] );
+				unset( $permalink_manager_redirects[ $element_id ] );
+			}
+		} // 2B. Check if the post/term uses the same URI for both permalink & custom redirects
+		else {
+			$removed_redirect  = self::clear_single_element_duplicated_redirect( $element_id, false );
+			$removed_redirects = ( ! empty( $removed_redirect ) ) ? 1 : 0;
+		}
+
+		// Check if function should only return the counts or update
+		if ( $count_removed ) {
+			return array( $removed_uris, $removed_redirects );
+		} else if ( ! empty( $removed_uris ) || ! empty( $removed_redirects ) ) {
+			Permalink_Manager_URI_Functions::save_all_uris();
+			update_option( 'permalink-manager-redirects', array_filter( $permalink_manager_redirects ) );
+		}
+
+		return array();
+	}
+
+	/**
+	 * Remove the duplicated custom redirect if the post/term has the same URI for both custom permalink and custom redirect
+	 *
+	 * @param string|int $element_id
+	 * @param bool $save_redirects
+	 * @param string $uri
+	 *
+	 * @return int
+	 */
+	public static function clear_single_element_duplicated_redirect( $element_id, $save_redirects = true, $uri = null ) {
+		global $permalink_manager_redirects;
+
+		// If the custom permalink is not changed ($uri) use the one that is currently used
+		if ( ! empty( $uri ) ) {
+			$current_uri = $uri;
+		} else {
+			$current_uri = Permalink_Manager_URI_Functions::get_single_uri( $element_id, false, true, null );
+		}
+
+		if ( ! empty( $current_uri ) && ! empty( $permalink_manager_redirects[ $element_id ] ) && in_array( $current_uri, $permalink_manager_redirects[ $element_id ] ) ) {
+			$duplicated_redirect_id = array_search( $current_uri, $permalink_manager_redirects[ $element_id ] );
+			unset( $permalink_manager_redirects[ $element_id ][ $duplicated_redirect_id ] );
+		}
+
+		// Update the redirects array in the database if the duplicated redirect was unset
+		if ( isset( $duplicated_redirect_id ) && $save_redirects ) {
+			update_option( 'permalink-manager-redirects', array_filter( $permalink_manager_redirects ) );
+		}
+
+		return ( isset( $duplicated_redirect_id ) ) ? 1 : 0;
+	}
+
+	/**
+	 * Remove the duplicated if the same URI is used for multiple custom redirects and return the removed redirects count
+	 *
+	 * @param bool $save_redirects
+	 *
+	 * @return int
+	 */
+	public static function clear_redirects_array( $save_redirects = false ) {
+		global $permalink_manager_redirects;
+
+		$removed_redirects = 0;
+
+		$all_redirect_duplicates = Permalink_Manager_Admin_Functions::get_all_duplicates();
+
+		foreach ( $all_redirect_duplicates as $single_redirect_duplicate ) {
+			$last_element = reset( $single_redirect_duplicate );
+
+			foreach ( $single_redirect_duplicate as $redirect_key ) {
+				// Keep a single redirect
+				if ( $last_element == $redirect_key ) {
+					continue;
+				}
+				preg_match( "/redirect-(\d+)_(tax-\d+|\d+)/", $redirect_key, $ids );
+
+				if ( ! empty( $ids[2] ) && ! empty( $permalink_manager_redirects[ $ids[2] ][ $ids[1] ] ) ) {
+					$removed_redirects ++;
+					unset( $permalink_manager_redirects[ $ids[2] ][ $ids[1] ] );
+				}
+			}
+		}
+
+		// Update the redirects array in the database if the duplicated redirect was unset
+		if ( isset( $duplicated_redirect_id ) && $save_redirects ) {
+			update_option( 'permalink-manager-redirects', array_filter( $permalink_manager_redirects ) );
+		}
+
+		return $removed_redirects;
+	}
+
+	/**
+	 * Remove custom permalinks & custom redirects for requested post or term
+	 *
+	 * @param $uri_key
+	 *
+	 * @return bool
+	 */
+	public static function force_clear_single_element_uris_and_redirects( $uri_key ) {
+		global $permalink_manager_redirects, $permalink_manager_before_sections_html;
+
+		$custom_uri = Permalink_Manager_URI_Functions::get_single_uri( $uri_key, false, true, null );
+
+		// Check if custom URI is set
+		if ( ! empty( $custom_uri ) ) {
+			Permalink_Manager_URI_Functions::remove_single_uri( $uri_key, null, true );
+			// translators: %s is the custom URI that was removed.
+			$updated = Permalink_Manager_UI_Elements::get_alert_message( sprintf( __( 'URI "%s" was removed successfully!', 'permalink-manager' ), $custom_uri ), 'updated' );
+		}
+
+		// Check if custom redirects are set
+		if ( isset( $permalink_manager_redirects[ $uri_key ] ) ) {
+			unset( $permalink_manager_redirects[ $uri_key ] );
+			update_option( 'permalink-manager-redirects', $permalink_manager_redirects );
+		}
+
+		if ( empty( $updated ) ) {
+			$permalink_manager_before_sections_html .= Permalink_Manager_UI_Elements::get_alert_message( __( 'URI and/or custom redirects does not exist or were already removed!', 'permalink-manager' ), 'error' );
+		} else {
+			// Display the alert in admin panel
+			if ( isset( $permalink_manager_before_sections_html ) && is_admin() ) {
+				$permalink_manager_before_sections_html .= $updated;
+			}
+		}
+
+		return true;
+	}
+
+	/**
+	 * Remove only custom redirects for requested post or term
+	 *
+	 * @param string $redirect_key
+	 */
+	public static function force_clear_single_redirect( $redirect_key ) {
+		global $permalink_manager_redirects, $permalink_manager_before_sections_html;
+
+		preg_match( "/redirect-(\d+)_(tax-\d+|\d+)/", $redirect_key, $ids );
+
+		if ( ! empty( $permalink_manager_redirects[ $ids[2] ][ $ids[1] ] ) ) {
+			unset( $permalink_manager_redirects[ $ids[2] ][ $ids[1] ] );
+
+			update_option( 'permalink-manager-redirects', array_filter( $permalink_manager_redirects ) );
+
+			$permalink_manager_before_sections_html = Permalink_Manager_UI_Elements::get_alert_message( __( 'The redirect was removed successfully!', 'permalink-manager' ), 'updated' );
+		}
+	}
+
+	/**
+	 * Save "Screen Options"
+	 */
+	public static function save_screen_options() {
+		check_admin_referer( 'screen-options-nonce', 'screenoptionnonce' );
+
+		$screen_options = ( isset( $_POST['screen-options'] ) ) ? map_deep( wp_unslash( $_POST['screen-options'] ), 'sanitize_text_field' ) : array();
+
+		if ( ! empty( $screen_options ) ) {
+			self::save_settings( 'screen-options', $screen_options );
+		}
+	}
+
+	/**
+	 * Save the plugin settings
+	 *
+	 * @param bool $field
+	 * @param bool $value
+	 * @param bool $display_alert
+	 */
+	public static function save_settings( $field = false, $value = false, $display_alert = true ) {
+		global $permalink_manager_options, $permalink_manager_before_sections_html;
+
+		// Info: The settings array is used also by "Screen Options"
+		$new_options = $permalink_manager_options;
+
+		// Save only selected field/sections
+		if ( $field && $value ) {
+			$new_options[ $field ] = $value;
+		} else {
+			$post_fields = $_POST; // phpcs:ignore WordPress.Security.NonceVerification.Missing -- The nonce is already validated in enclosing function
+
+			foreach ( $post_fields as $option_name => $option_value ) {
+				$new_options[ $option_name ] = $option_value;
+			}
+		}
+
+		// Allow only white-listed option groups
+		foreach ( $new_options as $group => $group_options ) {
+			if ( ! in_array( $group, array( 'licence', 'screen-options', 'general', 'permastructure-settings', 'stop-words' ) ) ) {
+				unset( $new_options[ $group ] );
+			}
+		}
+
+		// Sanitize & override the global with new settings
+		$new_options               = Permalink_Manager_Helper_Functions::sanitize_array( $new_options );
+		$permalink_manager_options = $new_options = array_filter( $new_options );
+
+		// Save the settings in database
+		update_option( 'permalink-manager', $new_options );
+
+		// Display the message
+		$permalink_manager_before_sections_html .= ( $display_alert ) ? Permalink_Manager_UI_Elements::get_alert_message( __( 'The settings are saved!', 'permalink-manager' ), 'updated' ) : "";
+	}
+
+	/**
+	 * Save the permastructures
+	 */
+	public static function save_permastructures() {
+		$permastructure_options = $permastructures = array();
+		$permastructure_types   = array( 'post_types', 'taxonomies' );
+
+		// Split permastructures & sanitize them
+		// phpcs:disable WordPress.Security.NonceVerification.Missing, WordPress.Security.ValidatedSanitizedInput.MissingUnslash, WordPress.Security.ValidatedSanitizedInput.InputNotSanitized -- The nonce is already validated in enclosing function
+		foreach ( $permastructure_types as $type ) {
+			if ( empty( $_POST[ $type ] ) || ! is_array( $_POST[ $type ] ) ) {
+				continue;
+			}
+
+			$permastructures[ $type ] = $_POST[ $type ];
+
+			foreach ( $permastructures[ $type ] as &$single_permastructure ) {
+				$single_permastructure = Permalink_Manager_Helper_Functions::sanitize_title( $single_permastructure, true, false, false );
+				$single_permastructure = trim( $single_permastructure, '\/ ' );
+			}
+		}
+
+		if ( ! empty( $_POST['permastructure-settings'] ) ) {
+			$permastructure_options = $_POST['permastructure-settings'];
+		}
+		// phpcs:enable WordPress.Security.NonceVerification.Missing, WordPress.Security.ValidatedSanitizedInput.MissingUnslash, WordPress.Security.ValidatedSanitizedInput.InputNotSanitized
+
+		// A. Permastructures
+		if ( ! empty( $permastructures['post_types'] ) || ! empty( $permastructures['taxonomies'] ) ) {
+			// Save the settings in a database
+			Permalink_Manager_Permastructure_Functions::save_all_permastructures( $permastructures );
+		}
+
+		// B. Permastructure settings
+		if ( ! empty( $permastructure_options ) ) {
+			self::save_settings( 'permastructure-settings', $permastructure_options );
+		}
+	}
+
+	/**
+	 * Update all permalinks in "Bulk URI Editor"
+	 */
+	function update_all_permalinks() {
+		// Check if posts or terms should be updated
+		if ( ! empty( $_POST['content_type'] ) && $_POST['content_type'] == 'taxonomies' ) { // phpcs:ignore WordPress.Security.NonceVerification.Missing -- The nonce is already validated in enclosing function
+			return Permalink_Manager_URI_Functions_Tax::update_all_permalinks();
+		} else {
+			return Permalink_Manager_URI_Functions_Post::update_all_permalinks();
+		}
+	}
+
+	/**
+	 * Remove a specific section of the plugin data stored in the database
+	 *
+	 * @param $field_name
+	 */
+	public static function remove_plugin_data( $field_name ) {
+		global $permalink_manager, $permalink_manager_before_sections_html;
+
+		// Make sure that the user is allowed to remove the plugin data
+		if ( ! current_user_can( 'manage_options' ) ) {
+			$permalink_manager_before_sections_html .= Permalink_Manager_UI_Elements::get_alert_message( __( 'You are not allowed to remove Permalink Manager data!', 'permalink-manager' ), 'error updated_slugs' );
+		}
+
+		switch ( $field_name ) {
+			case 'uris' :
+				$option_name = 'permalink-manager-uris';
+				$alert       = __( 'Custom permalinks', 'permalink-manager' );
+				break;
+			case 'redirects' :
+				$option_name = 'permalink-manager-redirects';
+				$alert       = __( 'Custom redirects', 'permalink-manager' );
+				break;
+			case 'external-redirects' :
+				$option_name = 'permalink-manager-external-redirects';
+				$alert       = __( 'External redirects', 'permalink-manager' );
+				break;
+			case 'permastructs' :
+				$option_name = 'permalink-manager-permastructs';
+				$alert       = __( 'Permastructure settings', 'permalink-manager' );
+				break;
+			case 'settings' :
+				$option_name = 'permalink-manager';
+				$alert       = __( 'Permastructure settings', 'permalink-manager' );
+				break;
+			default :
+				$alert = '';
+		}
+
+		if ( ! empty( $option_name ) ) {
+			// Remove the option from DB
+			delete_option( $option_name );
+
+			// Reload globals
+			$permalink_manager->get_options_and_globals();
+
+			// Translators: %s is the name of the data field that was removed
+			$alert_message                          = sprintf( __( '%s were removed!', 'permalink-manager' ), $alert );
+			$permalink_manager_before_sections_html .= Permalink_Manager_UI_Elements::get_alert_message( $alert_message, 'updated updated_slugs' );
+		}
+	}
+
+	/**
+	 * Trigger bulk tools ("Regenerate & reset", "Find & replace") via AJAX
+	 */
+	function ajax_bulk_tools() {
+		global $sitepress, $wpdb;
+
+		// Define variables
+		$return = array( 'alert' => Permalink_Manager_UI_Elements::get_alert_message( __( '<strong>No items</strong> were processed!', 'permalink-manager' ), 'error updated_slugs' ) );
+
+		// Get the name of the function
+		if ( isset( $_POST['regenerate'] ) ) {
+			$nonce_name = sanitize_key( $_POST['regenerate'] );
+			$operation  = 'regenerate';
+		} else if ( isset( $_POST['find_and_replace'] ) ) {
+			$nonce_name = sanitize_key( $_POST['find_and_replace'] );
+			$operation  = ( ! empty( $_POST['old_string'] ) && ! empty( $_POST['new_string'] ) ) ? 'find_and_replace' : '';
+		}
+
+		// Validate the nonce
+		if ( empty( $nonce_name ) || ! wp_verify_nonce( $nonce_name, 'permalink-manager' ) ) {
+			$error  = true;
+			$return = array( 'alert' => Permalink_Manager_UI_Elements::get_alert_message( __( 'Nonce is invalid!', 'permalink-manager' ), 'error updated_slugs' ) );
+		}
+
+		// Check if the user can edit the custom permalinks
+		if ( ! current_user_can( 'manage_options' ) ) {
+			$error  = true;
+			$return = array( 'alert' => Permalink_Manager_UI_Elements::get_alert_message( __( 'You are not allowed to perform this action.', 'permalink-manager' ), 'error updated_slugs' ) );
+		}
+
+		// Get the session ID
+		$uniq_id = ( ! empty( $_POST['pm_session_id'] ) ) ? sanitize_key( $_POST['pm_session_id'] ) : '';
+
+		// Get content type & post statuses
+		if ( ! empty( $_POST['content_type'] ) && $_POST['content_type'] == 'taxonomies' ) {
+			$content_type = 'taxonomies';
+
+			if ( empty( $_POST['taxonomies'] ) ) {
+				$error  = true;
+				$return = array( 'alert' => Permalink_Manager_UI_Elements::get_alert_message( __( '<strong>No taxonomy</strong> selected!', 'permalink-manager' ), 'error updated_slugs' ) );
+			}
+		} else {
+			$content_type = 'post_types';
+
+			// Check if any post type was selected
+			if ( empty( $_POST['post_types'] ) ) {
+				$error  = true;
+				$return = array( 'alert' => Permalink_Manager_UI_Elements::get_alert_message( __( '<strong>No post type</strong> selected!', 'permalink-manager' ), 'error updated_slugs' ) );
+			}
+
+			// Check post status
+			if ( empty( $_POST['post_statuses'] ) ) {
+				$error  = true;
+				$return = array( 'alert' => Permalink_Manager_UI_Elements::get_alert_message( __( '<strong>No post status</strong> selected!', 'permalink-manager' ), 'error updated_slugs' ) );
+			}
+		}
+
+		if ( ! empty( $operation ) && empty( $error ) ) {
+			// Hotfix for WPML (start)
+			if ( $sitepress ) {
+				remove_filter( 'get_terms_args', array( $sitepress, 'get_terms_args_filter' ), 10 );
+				remove_filter( 'get_term', array( $sitepress, 'get_term_adjust_id' ), 1 );
+				remove_filter( 'terms_clauses', array( $sitepress, 'terms_clauses' ), 10 );
+				remove_filter( 'get_pages', array( $sitepress, 'get_pages_adjust_ids' ), 1 );
+			}
+
+			// Get the mode
+			$mode         = ( isset( $_POST['mode'] ) ) ? sanitize_key( $_POST['mode'] ) : 'custom_uris';
+			$preview_mode = ( ! empty( $_POST['preview_mode'] ) ) ? true : false;
+
+			// Get items (try to get them from transient)
+			$items = get_transient( "pm_{$uniq_id}" );
+
+			// Get the iteration count and chunk size
+			$iteration  = isset( $_POST['iteration'] ) ? intval( $_POST['iteration'] ) : 1;
+			$chunk_size = apply_filters( 'permalink_manager_chunk_size', 50 );
+
+			if ( empty( $items ) && ! empty ( $chunk_size ) ) {
+				if ( $content_type == 'taxonomies' ) {
+					$items = Permalink_Manager_URI_Functions_Tax::get_items();
+				} else {
+					$items = Permalink_Manager_URI_Functions_Post::get_items();
+				}
+
+				if ( ! empty( $items ) ) {
+					// Count how many items need to be processed
+					$total = count( $items );
+
+					// Split items array into chunks and save them to transient
+					$items = array_chunk( $items, $chunk_size );
+
+					set_transient( "pm_{$uniq_id}", $items, 600 );
+
+					// Check for MySQL errors
+					if ( ! empty( $wpdb->last_error ) ) {
+						printf( '%s (%sMB)', esc_html( $wpdb->last_error ), esc_html( number_format( strlen( serialize( $items ) ) / 1000000, 2 ) ) );
+						http_response_code( 500 );
+						die();
+					}
+				}
+			}
+
+			// Get homepage URL and ensure that it ends with slash
+			$home_url = Permalink_Manager_Permastructure_Functions::get_permalink_base() . "/";
+
+			// Process the variables from $_POST object
+			// phpcs:disable WordPress.Security.ValidatedSanitizedInput.MissingUnslash -- The escaped slashes can be a part of REGEX formula
+			$old_string = ( ! empty( $_POST['old_string'] ) ) ? str_replace( $home_url, '', esc_sql( sanitize_text_field( $_POST['old_string'] ) ) ) : '';
+			$new_string = ( ! empty( $_POST['new_string'] ) ) ? str_replace( $home_url, '', esc_sql( sanitize_text_field( $_POST['new_string'] ) ) ) : '';
+			// phpcs:enable WordPress.Security.ValidatedSanitizedInput.MissingUnslash
+
+			// Process only one subarray
+			if ( ! empty( $items[ $iteration - 1 ] ) ) {
+				$chunk = $items[ $iteration - 1 ];
+
+				// Check how many iterations are needed
+				$total_iterations = count( $items );
+
+				if ( $content_type == 'taxonomies' ) {
+					$output = Permalink_Manager_URI_Functions_Tax::bulk_process_items( $chunk, $mode, $operation, $old_string, $new_string, $preview_mode );
+				} else {
+					$output = Permalink_Manager_URI_Functions_Post::bulk_process_items( $chunk, $mode, $operation, $old_string, $new_string, $preview_mode );
+				}
+
+				if ( ! empty( $output['updated_count'] ) ) {
+					$return                  = array_merge( $return, (array) Permalink_Manager_UI_Elements::display_updated_slugs( $output['updated'], true, true, $preview_mode ) );
+					$return['updated_count'] = $output['updated_count'];
+				}
+
+				// Send total number of processed items with a first chunk
+				if ( ! empty( $total ) && ! empty( $total_iterations ) && $iteration == 1 ) {
+					$return['total'] = $total;
+					$return['items'] = $items;
+				}
+
+				$return['iteration']        = $iteration;
+				$return['total_iterations'] = $total_iterations;
+				$return['progress']         = $chunk_size * $iteration;
+				$return['chunk']            = $chunk;
+
+				// After all chunks are processed remove the transient
+				if ( $iteration == $total_iterations ) {
+					delete_transient( "pm_{$uniq_id}" );
+				}
+			}
+
+			// Hotfix for WPML (end)
+			if ( $sitepress ) {
+				add_filter( 'terms_clauses', array( $sitepress, 'terms_clauses' ), 10, 4 );
+				add_filter( 'get_term', array( $sitepress, 'get_term_adjust_id' ), 1, 1 );
+				add_filter( 'get_terms_args', array( $sitepress, 'get_terms_args_filter' ), 10, 2 );
+				add_filter( 'get_pages', array( $sitepress, 'get_pages_adjust_ids' ), 1, 2 );
+			}
+		}
+
+		wp_send_json( $return );
+		die();
+	}
+
+	/**
+	 * Save permalink via AJAX
+	 */
+	public function ajax_save_permalink() {
+		$element_id = ( ! empty( $_POST['permalink-manager-edit-uri-element-id'] ) ) ? sanitize_key( $_POST['permalink-manager-edit-uri-element-id'] ) : ''; // phpcs:ignore WordPress.Security.NonceVerification.Missing -- Nonce is validated inside update_post_hook
+
+		if ( ! empty( $element_id ) && is_numeric( $element_id ) && current_user_can( 'edit_post', $element_id ) ) {
+			Permalink_Manager_URI_Functions_Post::update_post_hook( $element_id );
+
+			// Reload URI Editor & clean post cache
+			clean_post_cache( $element_id );
+			die();
+		}
+	}
+
+	/**
+	 * Check if URI was used before
+	 */
+	function ajax_detect_duplicates() {
+		if ( ! Permalink_Manager_Admin_Functions::current_user_can_edit_uris() ) {
+			wp_send_json_error( array( 'message' => __( 'You are not allowed to perform this action.', 'permalink-manager' ) ), 403 );
+		}
+
+		$duplicate_alert = __( 'Permalink is already in use, please select another one!', 'permalink-manager' );
+		$duplicates_data = array();
+
+		// phpcs:ignore WordPress.Security.NonceVerification.Missing, WordPress.Security.NonceVerification.Recommended, WordPress.Security.ValidatedSanitizedInput.InputNotSanitized -- No data is saved here; the array is recursively sanitized via sanitize_array().
+		$custom_uris = ( ! empty( $_REQUEST['custom_uris'] ) ) ? Permalink_Manager_Helper_Functions::sanitize_array( wp_unslash( $_REQUEST['custom_uris'] ) ) : array();
+
+		if ( ! empty( $custom_uris ) ) {
+			foreach ( $custom_uris as $raw_element_id => $element_uri ) {
+				$element_id                     = sanitize_key( $raw_element_id );
+				$duplicates_data[ $element_id ] = Permalink_Manager_URI_Functions::is_uri_duplicated( $element_uri, $element_id ) ? $duplicate_alert : 0;
+			}
+		} else {
+			// phpcs:disable WordPress.Security.NonceVerification.Missing, WordPress.Security.NonceVerification.Recommended -- No data is saved here
+			$single_uri = ( ! empty( $_REQUEST['custom_uri'] ) ) ? sanitize_text_field( wp_unslash( $_REQUEST['custom_uri'] ) ) : '';
+			$element_id = ( ! empty( $_REQUEST['element_id'] ) ) ? sanitize_key( $_REQUEST['element_id'] ) : '';
+			// phpcs:enable
+
+			if ( ! empty( $single_uri ) && ! empty( $element_id ) ) {
+				$duplicates_data = Permalink_Manager_URI_Functions::is_uri_duplicated( $single_uri, $element_id );
+			}
+		}
+
+		wp_send_json( $duplicates_data );
+	}
+
+	/**
+	 * Hide global notices (AJAX)
+	 */
+	function ajax_hide_global_notice() {
+		global $permalink_manager_alerts;
+
+		// phpcs:ignore WordPress.Security.NonceVerification.Recommended -- Low-risk cosmetic notice dismissal; authenticated admin-only AJAX action and no nonce is transmitted by the notice markup.
+		$alert_id = ( ! empty( $_REQUEST['alert_id'] ) ) ? sanitize_title( wp_unslash( $_REQUEST['alert_id'] ) ) : "";
+		if ( ! empty( $permalink_manager_alerts[ $alert_id ] ) ) {
+			$dismissed_transient_name = sprintf( 'permalink-manager-notice_%s', $alert_id );
+			$dismissed_time           = ( ! empty( $permalink_manager_alerts[ $alert_id ]['dismissed_time'] ) ) ? (int) $permalink_manager_alerts[ $alert_id ]['dismissed_time'] : DAY_IN_SECONDS;
+
+			set_transient( $dismissed_transient_name, 1, $dismissed_time );
+		}
+	}
+
+	/**
+	 * Import old URIs from "Custom Permalinks" (Pro)
+	 */
+	function import_custom_permalinks_uris() {
+		Permalink_Manager_Third_Parties::import_custom_permalinks_uris();
+	}
+
+}

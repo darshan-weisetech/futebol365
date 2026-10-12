@@ -1,0 +1,316 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Poll Maker\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-02-15 18:11+0300\n"
+"PO-Revision-Date: 2026-02-15 18:11+0300\n"
+"Last-Translator: \n"
+"Language-Team: English (United States)\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.8\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n_noop:1,2;_x\n"
+"X-Poedit-Basepath: .\n"
+"X-Loco-Version: 2.4.4; wp-5.5.3\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../admin/class-poll-maker-ays-admin.php:187
+msgid "Error"
+msgstr ""
+
+#: ../admin/class-poll-maker-ays-admin.php:188
+msgid "Can't load resource."
+msgstr ""
+
+#: ../admin/class-poll-maker-ays-admin.php:189
+msgid "Maybe something went wrong."
+msgstr ""
+
+#: ../admin/class-poll-maker-ays-admin.php:1706
+#: ../includes/class-poll-maker-feedback.php:131
+#: ../poll/poll-maker-block-new.js:64 ../poll/poll-maker-block.js:61
+msgid "Poll Maker"
+msgstr ""
+
+#: ../admin/class-poll-maker-ays-admin.php:1710
+msgid "CHRISTMAS SPECIAL"
+msgstr ""
+
+#: ../admin/class-poll-maker-ays-admin.php:1716
+msgid "Limited time offer"
+msgstr ""
+
+#: ../admin/class-poll-maker-ays-admin.php:1720
+#: ../admin/class-poll-maker-ays-admin.php:3028
+msgid "Click to copy"
+msgstr ""
+
+#: ../admin/class-poll-maker-ays-admin.php:1728
+#: ../admin/class-poll-maker-ays-admin.php:2361
+#: ../admin/class-poll-maker-ays-admin.php:3401
+#: ../admin/class-poll-maker-ays-admin.php:4100
+msgid "Buy Now"
+msgstr ""
+
+#: ../admin/class-poll-maker-ays-admin.php:1738
+#: ../admin/class-poll-maker-ays-admin.php:2326
+#: ../admin/class-poll-maker-ays-admin.php:2471
+#: ../admin/class-poll-maker-ays-admin.php:3057
+msgid "Dismiss ad"
+msgstr ""
+
+#: ../admin/class-poll-maker-ays-admin.php:1760
+msgid "Coupon code copied!"
+msgstr ""
+
+#: ../admin/class-poll-maker-ays-admin.php:2141
+msgid "Coupon Code"
+msgstr ""
+
+#: ../admin/class-poll-maker-ays-admin.php:2167
+msgid "Days"
+msgstr ""
+
+#: ../admin/class-poll-maker-ays-admin.php:2168
+msgid "Hours"
+msgstr ""
+
+#: ../admin/class-poll-maker-ays-admin.php:2169
+msgid "Minutes"
+msgstr ""
+
+#: ../admin/class-poll-maker-ays-admin.php:2170
+msgid "Seconds"
+msgstr ""
+
+#: ../admin/class-poll-maker-ays-admin.php:2184
+msgid "Get Your Deal"
+msgstr ""
+
+#: ../admin/class-poll-maker-ays-admin.php:2299
+#, php-format
+msgid "%1$s Mega Bundle %2$s (Quiz + Survey + Poll)"
+msgstr ""
+
+#: ../admin/class-poll-maker-ays-admin.php:2306
+msgid "30 Day Money Back Guarantee"
+msgstr ""
+
+#: ../admin/class-poll-maker-ays-admin.php:2363
+msgid "One-time payment"
+msgstr ""
+
+#: ../admin/class-poll-maker-ays-admin.php:2415
+msgid "days"
+msgstr ""
+
+#: ../admin/class-poll-maker-ays-admin.php:2420
+msgid "hours"
+msgstr ""
+
+#: ../admin/class-poll-maker-ays-admin.php:2425
+msgid "minutes"
+msgstr ""
+
+#: ../admin/class-poll-maker-ays-admin.php:2430
+msgid "seconds"
+msgstr ""
+
+#: ../admin/class-poll-maker-ays-admin.php:3021
+#, php-format
+msgid "Get the Pro Version of %s Poll Maker%s – 20%% OFF"
+msgstr ""
+
+#: ../admin/class-poll-maker-ays-admin.php:3022
+msgid "Unlock advanced features + 30 day Money Back Guarantee"
+msgstr ""
+
+#: ../admin/class-poll-maker-ays-admin.php:3037
+msgid "Only"
+msgstr ""
+
+#: ../admin/class-poll-maker-ays-admin.php:3037
+msgid "of 50 discounted licenses left"
+msgstr ""
+
+#: ../admin/class-poll-maker-ays-admin.php:3049
+msgid "Upgrade Now"
+msgstr ""
+
+#: ../admin/class-poll-maker-ays-admin.php:3339
+msgid "<span><a href='"
+msgstr ""
+
+#: ../admin/class-poll-maker-ays-admin.php:3846
+msgid "Fox LMS"
+msgstr ""
+
+#: ../admin/class-poll-maker-ays-admin.php:3847
+msgid "Build and manage online courses directly on your WordPress site."
+msgstr ""
+
+#: ../admin/class-poll-maker-ays-admin.php:3848
+msgid ""
+"With the FoxLMS plugin, you can create, sell, and organize courses, lessons, "
+"and quizzes, transforming your website into a dynamic e-learning platform."
+msgstr ""
+
+#: ../admin/class-poll-maker-ays-admin.php:3855
+msgid "Quiz Maker"
+msgstr ""
+
+#: ../admin/class-poll-maker-ays-admin.php:3856
+msgid "With our Quiz Maker plugin it’s easy to make a quiz in a short time."
+msgstr ""
+
+#: ../admin/class-poll-maker-ays-admin.php:3857
+msgid ""
+"You to add images to your quiz, order unlimited questions. Also you can "
+"style your quiz to satisfy your visitors."
+msgstr ""
+
+#: ../admin/class-poll-maker-ays-admin.php:3864
+msgid "Survey Maker"
+msgstr ""
+
+#: ../admin/class-poll-maker-ays-admin.php:3865
+msgid ""
+"Make amazing online surveys and get real-time feedback quickly and easily."
+msgstr ""
+
+#: ../admin/class-poll-maker-ays-admin.php:3866
+msgid ""
+"Learn what your website visitors want, need, and expect with the help of "
+"Survey Maker. Build surveys without limiting your needs."
+msgstr ""
+
+#: ../admin/class-poll-maker-ays-admin.php:3873
+msgid "Popup Box"
+msgstr ""
+
+#: ../admin/class-poll-maker-ays-admin.php:3874
+msgid ""
+"Popup everything you want! Create informative and promotional popups all in "
+"one plugin."
+msgstr ""
+
+#: ../admin/class-poll-maker-ays-admin.php:3875
+msgid ""
+"Attract your visitors and convert them into email subscribers and paying "
+"customers."
+msgstr ""
+
+#: ../admin/class-poll-maker-ays-admin.php:3882
+msgid "Gallery Photo Gallery"
+msgstr ""
+
+#: ../admin/class-poll-maker-ays-admin.php:3883
+msgid ""
+"Create unlimited galleries and include unlimited images in those galleries."
+msgstr ""
+
+#: ../admin/class-poll-maker-ays-admin.php:3884
+msgid ""
+"Represent images in an attractive way. Attract people with your own single "
+"and multiple free galleries from your photo library."
+msgstr ""
+
+#: ../admin/class-poll-maker-ays-admin.php:3891
+msgid "Secure Copy Content Protection"
+msgstr ""
+
+#: ../admin/class-poll-maker-ays-admin.php:3892
+msgid ""
+"Disable the right click, copy paste, content selection and copy shortcut "
+"keys on your website."
+msgstr ""
+
+#: ../admin/class-poll-maker-ays-admin.php:3893
+msgid ""
+"Protect web content from being plagiarized. Prevent plagiarism from your "
+"website with this easy to use plugin."
+msgstr ""
+
+#: ../admin/class-poll-maker-ays-admin.php:3900
+msgid "Personal Dictionary"
+msgstr ""
+
+#: ../admin/class-poll-maker-ays-admin.php:3901
+msgid ""
+"Allow your students to create personal dictionary, study and memorize the "
+"words."
+msgstr ""
+
+#: ../admin/class-poll-maker-ays-admin.php:3902
+msgid ""
+"Allow your users to create their own digital dictionaries and learn new "
+"words and terms as fastest as possible."
+msgstr ""
+
+#: ../admin/class-poll-maker-ays-admin.php:3909
+msgid "Chart Builder"
+msgstr ""
+
+#: ../admin/class-poll-maker-ays-admin.php:3910
+msgid "Chart Builder plugin allows you to create beautiful charts"
+msgstr ""
+
+#: ../admin/class-poll-maker-ays-admin.php:3911
+msgid " and graphs easily and quickly."
+msgstr ""
+
+#: ../admin/class-poll-maker-ays-admin.php:3918
+msgid "Easy Form"
+msgstr ""
+
+#: ../admin/class-poll-maker-ays-admin.php:3919
+msgid "Choose the best WordPress form builder plugin. "
+msgstr ""
+
+#: ../admin/class-poll-maker-ays-admin.php:3920
+msgid ""
+"Create contact forms, payment forms, surveys, and many more custom forms. "
+"Build forms easily with us."
+msgstr ""
+
+#: ../includes/class-poll-maker-feedback.php:108
+#, php-format
+msgid "Contact our %s support team %s to find and fix the issue."
+msgstr ""
+
+#: ../includes/lists/class-poll-maker-categories-list-table.php:202
+msgid "There are no poll categories yet."
+msgstr ""
+
+#: ../includes/lists/class-poll-maker-each-results-poll-list-table.php:265
+#: ../includes/lists/class-poll-maker-results-list-table.php:206
+msgid "There are no results yet."
+msgstr ""
+
+#: ../includes/lists/class-poll-maker-polls-list-table.php:1485
+msgid "There are no polls yet."
+msgstr ""
+
+#: ../poll/poll-maker-block-new.js:78 ../poll/poll-maker-block.js:75
+msgid "Something went wrong please reload page"
+msgstr ""
+
+#: ../poll/poll-maker-block-new.js:83 ../poll/poll-maker-block.js:80
+msgid "Loading..."
+msgstr ""
+
+#: ../poll/poll-maker-block-new.js:90 ../poll/poll-maker-block.js:87
+msgid "There are no polls yet"
+msgstr ""
+
+#: ../poll/poll-maker-block-new.js:100 ../poll/poll-maker-block.js:97
+msgid "-Select Poll-"
+msgstr ""
+
+#: ../poll/poll-maker-block-new.js:113 ../poll/poll-maker-block.js:110
+msgid "Select Poll"
+msgstr ""
